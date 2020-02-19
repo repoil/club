@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<addons>
+  <addon id="plugin.video.exodusredux" version="2.0.3a" name="Exodus Redux" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.exodusredux"/>
+		<import addon="script.exodusredux.artwork"/>
+		<import addon="script.exodusredux.metadata"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.requests"/>
+<!--		<import addon="script.module.lambdascrapers" />-->
+		<import addon="script.module.openscrapers"/>
+		<import addon="script.module.metahandler" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus Redux</summary>
+		<description lang="en">[B]Exodus Redux[/B][CR] [B]***OpenScrapers Edition***[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot/>
+		</assets>
+		<news/>
+	</extension>
+</addon>
+  <addon id="repository.repoil.club" name="[COLOR white]Repo IL[/COLOR] [COLOR FF1864ab]Club[/COLOR]" version="1.0.0" provider-name="RepoIL.Club">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Repo IL Club">
+		<dir>
+			<info>https://raw.githubusercontent.com/repoil/club/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/repoil/club/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/repoil/club/master/</datadir>
+		</dir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repo IL Club</summary>
+        <description>All new addons you need</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+  <addon id="script.exodusredux.artwork" version="1.0.2" name="Exodus Redux Artwork" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Redux Addon</summary>
+		<description/>
+		<platform>all</platform>
+	</extension>
+</addon>
+  <addon id="script.exodusredux.metadata" version="1.0.2" name="Exodus Redux Metadata" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Exodus Redux Addon</summary>
+		<description>Metadata for Exodus Redux are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+  <addon id="script.module.exodusredux" name="Exodus Redux Module" version="2.0.5" provider-name="I-A-C">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Exodus Redux</summary>
+	</extension>
+</addon>
+  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.104" provider-name="Addons4Kodi">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension> 
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">OpenScrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart/>
+    </assets>
+    <news>v0.0.1.98 - Scraper updates and language additions</news>
+    </extension>
+</addon>
+  <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.37" provider-name="jsergio">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube" optional="true"/>
+        <import addon="script.module.python.twitch" optional="true"/>
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true"/>
+        <import addon="plugin.video.gdrive" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi naj&#x10D;e&#x161;&#x107;e URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">&#x395;&#x3C0;&#x3AF;&#x3BB;&#x3C5;&#x3C3;&#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3B4;&#x3AD;&#x3C3;&#x3BC;&#x3C9;&#x3BD; &#x3BA;&#x3BF;&#x3B9;&#x3BD;&#x3CE;&#x3BD; &#x3B5;&#x3BE;&#x3C5;&#x3C0;&#x3B7;&#x3C1;&#x3B5;&#x3C4;&#x3B7;&#x3C4;&#x3CE;&#x3BD; &#x3C3;&#x3B5; &#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3AE; &#x3B2;&#x3AF;&#x3BD;&#x3C4;&#x3B5;&#x3BF; &#x3B9;&#x3BA;&#x3B1;&#x3BD;&#x3CC; &#x3B3;&#x3B9;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3C9;&#x3B3;&#x3AE; &#x3C3;&#x3C4;&#x3BF; XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi naj&#x10D;e&#x161;&#x107;e URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priklju&#x10D;aka za video dodatke koji zahtjevaju vi&#x161;estruke video izvore.</description>
+    </extension>
+</addon>
+</addons>
