@@ -430,6 +430,89 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
+  <addon id="plugin.video.netflix" name="Netflix" version="0.16.4" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+    <import addon="script.module.addon.signals" version="0.0.3"/>
+    <import addon="script.module.future" version="0.17.1"/>
+    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    <import addon="script.module.pycryptodome" version="3.4.3"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.python.module" library="modules/mysql-connector-python"/>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="cs_CZ">Netflix</summary>
+    <description lang="cs_CZ">Plugin pro sledov&#xE1;n&#xED; film&#x16F;, seri&#xE1;l&#x16F; online z Netflixu</description>
+    <disclaimer lang="cs_CZ">N&#x11B;kter&#xE9; &#x10D;&#xE1;sti tohoto dopl&#x148;ku nemus&#xED; b&#xFD;t ve va&#x161;&#xED; zemi pobytu leg&#xE1;ln&#xED; - p&#x159;ed instalac&#xED; dbejte na va&#x161;e z&#xE1;kony.</disclaimer>
+    <summary lang="de_DE">Netflix</summary>
+    <description lang="de_DE">Addon f&#xFC;r Netflix VOD Services</description>
+    <disclaimer lang="de_DE">M&#xF6;glicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation &#xFC;berpr&#xFC;fen.</disclaimer>
+    <summary lang="en_GB">Netflix</summary>
+    <description lang="en_GB">Netflix VOD Services Addon</description>
+    <disclaimer lang="en_GB">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <summary lang="nl_NL">Netflix</summary>
+    <description lang="nl_NL">Bekijk Netflix films en tvprogramma's in Kodi.</description>
+    <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
+    <summary lang="ja_JP">Netflix</summary>
+    <description lang="ja_JP">Netflix VOD &#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x30A2;&#x30C9;&#x30AA;&#x30F3;</description>
+    <disclaimer lang="ja_JP">&#x4E00;&#x90E8;&#x306E;&#x56FD;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x30A2;&#x30C9;&#x30AA;&#x30F3;&#x304C;&#x4E0D;&#x6CD5;&#x3067;&#x3042;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x8A2D;&#x7F6E;&#x3059;&#x308B;&#x524D;&#x306B;&#x5FC5;&#x305A;&#x95A2;&#x9023;&#x6CD5;&#x5F8B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</disclaimer>
+    <summary lang="ko_KR">Netflix</summary>
+    <description lang="ko_KR">Netflix VOD &#xC11C;&#xBE44;&#xC2A4;&#xC560;&#xB4DC;&#xC628;</description>
+    <disclaimer lang="ko_KR">&#xC77C;&#xBD80; &#xAD6D;&#xAC00;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xC560;&#xB4DC;&#xC628;&#xC758; &#xC77C;&#xBD80;&#xAC00; &#xBD88;&#xBC95;&#xC77C; &#xC218;&#xB3C4; &#xC788;&#xC73C;&#xB2C8;, &#xC124;&#xCE58;&#xD558;&#xAE30;&#xC804; &#xAD00;&#xB828; &#xBC95;&#xC744; &#xD655;&#xC778;&#xD558;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</disclaimer>
+    <description lang="it_IT">Netflix Addon servizi VOD</description>
+    <disclaimer lang="it_IT">Alcune parti di questo addon potrebbero non essere legali nel proprio paese di residenza - si prega di verificare le leggi locali prima dell'installazione.</disclaimer>
+    <summary lang="hu_HU">Netflix</summary>
+    <description lang="hu_HU">Netflix VOD kieg&#xE9;sz&#xED;t&#x151; a Kodihoz</description>
+    <disclaimer lang="hu_HU">El&#x151;fordulhat, hogy a kieg&#xE9;sz&#xED;t&#x151; n&#xE9;h&#xE1;ny r&#xE9;sze nem t&#xF6;rv&#xE9;nyes az &#xD6;n orsz&#xE1;g&#xE1;ban - telep&#xED;t&#xE9;s el&#x151;tt t&#xE1;j&#xE9;koz&#xF3;djon a helyi t&#xF6;rv&#xE9;nyekr&#x151;l.</disclaimer>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot-01.jpg</screenshot>
+      <screenshot>resources/media/screenshot-02.jpg</screenshot>
+      <screenshot>resources/media/screenshot-03.jpg</screenshot>
+      <screenshot>resources/media/screenshot-04.jpg</screenshot>
+      <screenshot>resources/media/screenshot-05.jpg</screenshot>
+    </assets>
+    <language>en cs de es hr hu it ja ko nl pl pt sv</language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://www.netflix.com</website>
+    <email/>
+    <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
+    <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
+    <news>
+v0.16.4 (2020-01-28)
+-Up Next is now supported only from version 1.1.0 and up
+-Added czech language
+-Added "because you liked" to recommendations menu
+-Added Up Next install option
+-Implemented Up Next feature, end time information
+-Implemented Up Next feature, fast start next video
+-Fixed the error "Request failed validation during key exchange"
+-Fixed an issue that causing opening Up Next notification in wrong position
+-Fixed html tags in profiles names
+-Fixed STRM files resume workaround
+-Fixed retrieving infolabels from library on python 3
+-Managed user id token key expiration
+-Manifest is saved to hdd with enabled verbose debugging only
+-Updated de, es, hu, it translations
+-Some minor changes, fixes
+
+v0.16.3 (2020-01-18)
+-Fixed an issue that causing addon freeze on export/update to library
+-Fixed an regression issue that causing http error 401
+-Fixed an issue that causing unicodedecode error at startup
+-Fixed an issue that in some cases prevented the export of a tv show season
+-Generally optimized addon speed
+-Many improvements to the code
+    </news>
+  </extension>
+</addon>
   <addon id="plugin.video.seren" version="1.6.9" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
