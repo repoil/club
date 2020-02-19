@@ -1,14 +1,32 @@
 {
 	"I-A-C":{
-		"xml": "https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml",
-		"zip": "https://raw.githubusercontent.com/I-A-C/zips/master/"
+		"xml": "https://raw.githubusercontent.com/I-A-C/zips/master/addons.xml"
 	},
 	"I-A-C2":{
-		"xml": "https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml",
-		"zip": "https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/"
+		"xml": "https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml"
 	},
 	"I-A-C3":{
-		"xml": "https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml",
-		"zip": "https://raw.githubusercontent.com/jsergio123/zips/master/"
-	}
+		"xml": "https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml"
+	},
+	"creq":{
+		"xml": "https://raw.githubusercontent.com/thecrewwh/zips/master/_zip/addons.xml"
+	},
+	"creq2":{
+		"xml": "https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml"
+	},	
+	"venom":{
+		"xml": "https://raw.githubusercontent.com/123Venom/zips/master/addons.xml"
+	},
+	"apollo":{
+		"xml": "https://raw.githubusercontent.com/Apollo2000/Repo18/master/addons.xml"
+	},
+	"covenant":{
+		"xml": "https://raw.githubusercontent.com/covenant01/plugins/master/addons.xml"
+	},
+	"diamond":{
+		"xml": "https://raw.githubusercontent.com/bobbybark/diamond-build-repo/master/addons.xml"
+	},
+	"diamond2":{
+		"xml": "https://raw.githubusercontent.com/bobbybark/diamond-7of9-addon-repo/master/addons.xml"
+	}	
 }

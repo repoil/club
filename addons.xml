@@ -1,5 +1,160 @@
 <?xml version="1.0"?>
 <addons>
+  <addon id="context.venom" version="1.0.1" name="Venom - Global Context Menu Items" provider-name="Venom">
+	<requires>
+		<import addon="xbmc.python" version="2.23.0"/>
+	</requires>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="traktManager.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Trakt Manager</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+			<item library="rescrape.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Rescrape Item</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+			<item library="clearProviders.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Clear Providers</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+<!-- 			<item library="autoPlay.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Auto Play</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item> -->
+
+<!-- 			<item library="sourceSelect.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Source Select</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item> -->
+
+			<item library="findSimilar.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Find Similar</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]
+				</visible>
+			</item>
+
+			<item library="browseSeries.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Browse Series</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow)]
+				</visible>
+			</item>
+
+			<item library="browseEpisodes.py">
+				<label>[B][COLOR red]Venom[/COLOR][/B] - Browse Episodes</label>
+				<visible>
+					String.StartsWith(ListItem.path,plugin://plugin.video.venom/) + String.IsEqual(ListItem.Property(isVenom_widget),true) +
+					String.IsEqual(ListItem.dbtype,episode)
+				</visible>
+			</item> --&gt;
+
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Venom - This Addon is currently in beta. Please be aware there may be bugs present</summary>
+		<description lang="en">Adds Global Contextual Menu Items for Venom menu items throughout Kodi
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum/>
+		<website/>
+		<source/>
+		<disclaimer lang="en"/>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
+  <addon id="plugin.program.thecrewiz" name="[COLOR orchid]THE CREW WIZARD[/COLOR]" version="0.0.11" provider-name="The Crew">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+        <description lang="en">Many come, Many go. The true and dedicated are here.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/art/ss/1.png</screenshot>
+            <screenshot>resources/art/ss/2.png</screenshot>
+            <screenshot>resources/art/ss/3.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+  <addon id="plugin.video.covenant" version="1.1.34" name="Covenant" provider-name="Covenant">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+		<import addon="script.module.metahandler" version="2.9.0"/>
+		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="script.module.resolveurl" version="5.0.27"/>
+		<import addon="script.module.openscrapers"/>
+		<import addon="script.module.addon.signals" version="0.0.3"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.covenant"/>
+		<import addon="script.covenant.artwork" version="1.0.0"/>
+		<import addon="script.covenant.metadata" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="covenant.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Covenant</summary>
+		<description lang="en">[I]A New Generation[/I][CR][CR][B]Covenant Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<description lang="hr">[I]Nova generacija[/I][CR][CR][B]Covenant Filmova i TV serija[/B][CR][CR]Ovaj dodatak ne sadr&#x17E;i dijelove Kodi Medijskog Centra. Ne ta&#x17E;ite pomo&#x107; za ovaj dodatak na slu&#x17E;benim kanalima podr&#x161;ke za Kodi.[CR][CR]Autor ne posjeduje bilo kakav sadr&#x17E;aj u ovom dodatku i ne preuzima bilo kakvu odgovornost za prona&#x111;eni sadr&#x17E;aj.</description>
+		<description lang="he">[I]&#x5D4;&#x5D3;&#x5D5;&#x5E8; &#x5D4;&#x5D7;&#x5D3;&#x5E9;[/I][CR][CR][B]Covenant &#x5E1;&#x5E8;&#x5D8;&#x5D9;&#x5DD; &#x5D5;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA;[/B][CR][CR]&#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D4;&#x5D6;&#x5D5; &#x5D0;&#x5D9;&#x5E0;&#x5D4; &#x5D7;&#x5DC;&#x5E7; &#x5E9;&#x5DC; Kodi Media Center. &#x5D0;&#x5E0;&#x5D0; &#x5D0;&#x5DC; &#x5EA;&#x5D1;&#x5E7;&#x5E9; &#x5E2;&#x5D6;&#x5E8;&#x5D4; &#x5E2;&#x5DD; &#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D6;&#x5D4; &#x5DE;&#x5DB;&#x5DC; &#x5D0;&#x5D7;&#x5D3; &#x5DE;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5D4;&#x5EA;&#x5DE;&#x5D9;&#x5DB;&#x5D4; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD; &#x5E9;&#x5DC; Kodi [CR][CR]. &#x5D0;&#x5D9;&#x5DF; &#x5DC;&#x5DE;&#x5D7;&#x5D1;&#x5E8; &#x5EA;&#x5D5;&#x5DB;&#x5DF; &#x5D1;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D4;&#x5D6;&#x5D5; &#x5D5;&#x5D4;&#x5DE;&#x5D7;&#x5D1;&#x5E8; &#x5D0;&#x5D9;&#x5E0;&#x5D5; &#x5D0;&#x5D7;&#x5E8;&#x5D0;&#x5D9; &#x5DC;&#x5EA;&#x5D5;&#x5DB;&#x5DF; &#x5E9;&#x5E0;&#x5DE;&#x5E6;&#x5D0;.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum/>
+		<website/>
+		<source/>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadr&#x17E;aj koji je prona&#x111;en i nije povezan sa bilo kojim izvorom sadr&#x17E;aja. Ovaj dodatak samo pretra&#x17E;uje sadr&#x17E;aj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
+		<disclaimer lang="he">&#x5DE;&#x5D7;&#x5D1;&#x5E8; &#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D6;&#x5D4; &#x5D0;&#x5D9;&#x5E0;&#x5D5; &#x5DE;&#x5D0;&#x5E8;&#x5D7; &#x5D0;&#x5EA; &#x5D4;&#x5EA;&#x5D5;&#x5DB;&#x5DF; &#x5E9;&#x5D9;&#x5EA;&#x5DB;&#x5DF; &#x5D5;&#x5D9;&#x5D9;&#x5DE;&#x5E6;&#x5D0; &#x5D5;&#x5D0;&#x5D9;&#x5DF; &#x5DC;&#x5D5; &#x5D6;&#x5D9;&#x5E7;&#x5D4; &#x5DC;&#x5D0;&#x5E3; &#x5D0;&#x5D7;&#x5D3; &#x5DE;&#x5E1;&#x5E4;&#x5E7;&#x5D9; &#x5D4;&#x5EA;&#x5D5;&#x5DB;&#x5DF;. &#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5E8;&#x5E7; &#x5DE;&#x5D7;&#x5E4;&#x5E9;&#x5EA; &#x5EA;&#x5D5;&#x5DB;&#x5DF; &#x5E9;&#x5E7;&#x5D9;&#x5D9;&#x5DD; &#x5D1;&#x5D0;&#x5EA;&#x5E8;&#x5D9; &#x5D0;&#x5D9;&#x5E0;&#x5D8;&#x5E8;&#x5E0;&#x5D8;. &#x5D4;&#x5E9;&#x5D9;&#x5DE;&#x5D5;&#x5E9; &#x5D1;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D4;&#x5D5;&#x5D0; &#x5E2;&#x5DC; &#x5D0;&#x5D7;&#x5E8;&#x5D9;&#x5D5;&#x5EA;&#x5DA; &#x5D1;&#x5DC;&#x5D1;&#x5D3;!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<news/>
+	</extension>
+</addon>
   <addon id="plugin.video.exodusredux" version="2.0.3a" name="Exodus Redux" provider-name="I-A-C">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -30,6 +185,104 @@
 		<news/>
 	</extension>
 </addon>
+  <addon id="plugin.video.themagicdragon" name="The Magic Dragon" version="1.33" provider-name="Magic Dragon">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson"/> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLORblue]Magic Dragon All In One Add On[/COLOR]</summary>
+    <description lang="en">[COLORblue]This Is A 3rd Party Add On And Is Not Linked To Kodi In Any Way. All The Content We Provide Is Freely Available On The Internet. We Do Not Store Any Content Ourselves.[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+  <addon id="plugin.video.venom" version="3.5.1" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+		<import addon="script.module.metahandler" version="2.9.0"/>
+		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="script.module.resolveurl" version="5.0.27"/>
+		<import addon="script.module.openscrapers"/>
+		<import addon="script.module.addon.signals" version="0.0.3"/>
+		<import addon="context.venom" version="1.0.0"/>
+	</requires>
+
+	<extension point="xbmc.python.pluginsource" library="venom.py">
+		<provides>video</provides>
+	</extension>
+
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.python.module" library="resources/lib/"/>
+
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker> <!-- You can enable this if you want, expect some instability but much faster menu speeds -->
+		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
+		<description lang="en">[B]Venom[/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum/>
+		<website/>
+		<source/>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot01a.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot02a.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
+		</assets>
+		<news>
+[B][COLOR red]Update - v3.5.1 - Feb. 8, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Scraper function cache now written to the providers.db
+    instead of cache.db.  Now using "Clear Providers" will
+    wipe both links and function cache with no need to use
+    "Clear cache". This will help preserve meta data.[/I]
+[COLOR yellow]--[/COLOR][I] Updated "context.venom" addon to now include the
+    following new global context options as follows.
+    "Clear Providers"
+    "Find Similar"
+    "Browse Series"
+    "Browse Episodes"[/I]
+		</news>
+	</extension>
+</addon>
+  <addon id="program.apollo" version="4.1.8" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR] Kodi 18" provider-name="Apollo Group">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.myaddon.artwork"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Apollo Group TV - Watch for the B-E-S-T!</summary>
+		<description>
+		For Support Visit Help.ApolloGroup.TV ,Become a member today, visit: ApolloGroup.TV
+		</description>
+		<platform>all</platform>
+	</extension>
+</addon>
   <addon id="repository.repoil.club" name="[COLOR white]Repo IL[/COLOR] [COLOR FF1864ab]Club[/COLOR]" version="1.0.0" provider-name="RepoIL.Club">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -46,6 +299,28 @@
         <description>All new addons you need</description>
         <platform>all</platform>
     </extension>
+</addon>
+  <addon id="script.covenant.artwork" version="1.0.3" name="Covenant Artwork" provider-name="Covenant">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Covenant Addon</summary>
+		<description/>
+		<platform>all</platform>
+	</extension>
+</addon>
+  <addon id="script.covenant.metadata" version="1.0.2" name="Covenant Metadata" provider-name="Covenant">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Covenant Addon</summary>
+		<description>Metadata for Covenant are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
   <addon id="script.exodusredux.artwork" version="1.0.2" name="Exodus Redux Artwork" provider-name="I-A-C">
 	<requires>
@@ -67,6 +342,16 @@
 		<summary>Metadata for the Exodus Redux Addon</summary>
 		<description>Metadata for Exodus Redux are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
+	</extension>
+</addon>
+  <addon id="script.module.covenant" name="Covenant Module" version="1.00.029" provider-name="Covenant">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Covenant</summary>
 	</extension>
 </addon>
   <addon id="script.module.exodusredux" name="Exodus Redux Module" version="2.0.5" provider-name="I-A-C">
@@ -122,5 +407,34 @@
         <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
         <description lang="hr">Prilagodi naj&#x10D;e&#x161;&#x107;e URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priklju&#x10D;aka za video dodatke koji zahtjevaju vi&#x161;estruke video izvore.</description>
     </extension>
+</addon>
+  <addon id="script.myaddon.artwork" version="1.0.8" name="Myaddon Artwork" provider-name="Team Afterbirth">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Myaddon Addon</summary>
+		<description>Artwork Module for the Myaddon Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+  <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="2.0.4" provider-name="Wizdom">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Wizdom Subs</summary>
+    <description lang="en">Wizdom Subs. Be smart use subs!  
+Visit us at http://wizdom.xyz</description>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 </addons>

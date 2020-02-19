@@ -3,10 +3,10 @@
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
-	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.module" library="lib"/>
 	<extension point="xbmc.addon.metadata">
 		<summary>Themes for the Exodus Redux Addon</summary>
-		<description></description>
+		<description/>
 		<platform>all</platform>
 	</extension>
 </addon>
