@@ -28,5 +28,15 @@
 	},
 	"diamond2":{
 		"xml": "https://raw.githubusercontent.com/bobbybark/diamond-7of9-addon-repo/master/addons.xml"
-	}	
+	},
+	"tiki":{
+		"xml":"https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml",
+		"zip":"https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip"
+	},
+	"nixgates":{
+		"xml":"https://raw.githubusercontent.com/nixgates/nixgates/master/packages/addons.xml"
+	},
+	"freshDJ":{
+		"xml":"https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml"
+	}
 }

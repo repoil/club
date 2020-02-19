@@ -4,5 +4,11 @@
 	"plugin.video.venom",
 	"program.apollo",
 	"plugin.video.covenant",
-	"plugin.video.themagicdragon"
+	"plugin.video.themagicdragon",
+	"plugin.video.fen",
+	"plugin.video.seren",
+	"plugin.video.beatport.mod",
+	"plugin.video.fdj.hd",
+	"plugin.video.mixcloud.mod",
+	"plugin.video.spotify.mod"
 ]
