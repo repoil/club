@@ -42,5 +42,6 @@
 	"FishIL":{
 		"xml":"https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml",
 		"zip":"https://raw.githubusercontent.com/fishenzon/repo/master/zips"
-	}
+	},
+	"netflix":{"xml":"https://raw.githubusercontent.com/CastagnaIT/repository.castagnait/master/addons.xml"}
 }
