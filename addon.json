@@ -14,5 +14,6 @@
 	"plugin.video.wallaNew.video",
 	"plugin.program.redalert",
 	"plugin.video.idanplus",
-	"plugin.video.netflix"
+	"plugin.video.netflix",
+	"service.subtitles.apollo"
 ]
