@@ -188,6 +188,24 @@ Added Trakt Manager
 		</news>
 	</extension>
 </addon>
+  <addon id="plugin.program.redalert" name="&#x5E6;&#x5D1;&#x5E2; &#x5D0;&#x5D3;&#x5D5;&#x5DD;" version="1.0.1" provider-name="nil">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>executable</provides>
+		</extension>
+		<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">&#x5D4;&#x5E6;&#x5D2;&#x5EA; &#x5D4;&#x5EA;&#x5E8;&#x5D0;&#x5D5;&#x5EA; &#x5E6;&#x5D1;&#x5E2; &#x5D0;&#x5D3;&#x5D5;&#x5DD;.</summary>
+			<description lang="en">&#x5D4;&#x5E6;&#x5D2;&#x5EA; &#x5D4;&#x5EA;&#x5E8;&#x5D0;&#x5D5;&#x5EA; &#x5E6;&#x5D1;&#x5E2; &#x5D0;&#x5D3;&#x5D5;&#x5DD;.[CR]based on https://redalert.me/</description>
+			<news>- Bugfix: error notification when alerts list from server is empty.</news>
+			<supportedcontent>
+				<content>tvshows</content>
+			</supportedcontent>
+		</extension>
+	</addon>
   <addon id="plugin.program.thecrewiz" name="[COLOR orchid]THE CREW WIZARD[/COLOR]" version="0.0.11" provider-name="The Crew">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -375,6 +393,25 @@ INFO: For latest changes see Changelog within Tools of add-on.
         </news>
     </extension>
 </addon>
+  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.5.5" provider-name="nil">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+			<import addon="script.module.xmltodict"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.service" library="resources/lib/service.py" start="[login|startup]"/>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.</summary>
+			<description lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.[CR]&#x5D0;&#x5E4;&#x5E9;&#x5E8;&#x5D5;&#x5D9;&#x5D5;&#x5EA; &#x5E9;&#x5D5;&#x5E0;&#x5D5;&#x5EA; &#x5D1;&#x5D4;&#x5D2;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D5;&#x5D1;&#x5E7;&#x5DC;&#x5D9;&#x5E7; &#x5D9;&#x5DE;&#x5E0;&#x5D9; &#x5E2;&#x5DC; &#x5E4;&#x5E8;&#x5D9;&#x5D8; &#x5D1;&#x5E8;&#x5E9;&#x5D9;&#x5DE;&#x5D4;.</description>
+			<news>- Fix playing 20-Channel Live and VOD links.</news>
+			<supportedcontent>
+				<content>tvshows</content>
+			</supportedcontent>
+		</extension>
+	</addon>
   <addon id="plugin.video.mixcloud.mod" name="Mixcloud Mod" version="1.0" provider-name="frenchdj">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -640,6 +677,28 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</news>
 	</extension>
 </addon>
+  <addon id="plugin.video.wallaNew.video" name="&#x5D5;&#x5D5;&#x5D0;&#x5DC;&#x5D4;" version="2.3.2" provider-name="sbentin, shlomico, nil">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="walla.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<minversion>31632</minversion>
+			<summary lang="en">Watch Walla video contents.</summary>
+			<summary lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5DE;&#x5D9;&#x5D3;&#x5E2; VOD &#x5DE;&#x5D0;&#x5EA;&#x5E8; walla</summary>
+			<description lang="en">Watch Walla contents (inculde Yes, Nickoldeon and Viva).</description>
+			<description lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5DE;&#x5D2;&#x5D5;&#x5D5;&#x5DF; &#x5D4;&#x5E1;&#x5E8;&#x5D8;&#x5D9;&#x5DD; &#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9;&#x5DD; &#x5D5;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5E0;&#x5D9;&#x5EA;&#x5E0;&#x5D9;&#x5DD; &#x5DC;&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D3;&#x5E8;&#x5DA; &#x5D0;&#x5EA;&#x5E8; video.walla.co.il</description>
+			<disclaimer>This addon parse Walla site, you should check Walla's TOS before you using. It's as is</disclaimer>
+			<supportedcontent>
+			  <content>tvshows</content>
+			  <content>episodes</content>
+			  <content>movies</content>
+			</supportedcontent>	
+		</extension>
+	</addon>
   <addon id="program.apollo" version="4.1.8" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR] Kodi 18" provider-name="Apollo Group">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>

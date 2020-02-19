@@ -10,5 +10,8 @@
 	"plugin.video.beatport.mod",
 	"plugin.video.fdj.hd",
 	"plugin.video.mixcloud.mod",
-	"plugin.video.spotify.mod"
+	"plugin.video.spotify.mod",
+	"plugin.video.wallaNew.video",
+	"plugin.program.redalert",
+	"plugin.video.idanplus"
 ]

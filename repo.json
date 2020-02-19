@@ -38,5 +38,9 @@
 	},
 	"freshDJ":{
 		"xml":"https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml"
+	},
+	"FishIL":{
+		"xml":"https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml",
+		"zip":"https://raw.githubusercontent.com/fishenzon/repo/master/zips"
 	}
 }
