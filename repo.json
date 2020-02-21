@@ -46,5 +46,13 @@
 	"netflix":{
 		"xml":"https://raw.githubusercontent.com/CastagnaIT/repository.castagnait/master/addons.xml",
 		"zip":"https://raw.githubusercontent.com/CastagnaIT/repository.castagnait/master/zip"
+	},
+	"sdarot":{
+		"xml":"http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml",
+		"zip":"http://raw.github.com/Sdarot/Repo-Sdarot/master/zip"
+	},
+	"cubicle":{
+		"xml":"https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml",
+		"zip":"https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/repo"
 	}
 }

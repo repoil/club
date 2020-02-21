@@ -2,7 +2,6 @@
 	"plugin.video.exodusredux",
 	"plugin.program.thecrewiz",
 	"plugin.video.venom",
-	"program.apollo",
 	"plugin.video.covenant",
 	"plugin.video.themagicdragon",
 	"plugin.video.fen",
@@ -15,5 +14,13 @@
 	"plugin.program.redalert",
 	"plugin.video.idanplus",
 	"plugin.video.netflix",
-	"service.subtitles.apollo"
+	"program.apollo",
+	"service.subtitles.apollo",
+	"plugin.video.sdarot.tv",
+	"plugin.program.sdarot.tv",
+	"plugin.video.hotVOD.video",
+	"plugin.video.MakoTV",
+	"plugin.video.makoTV.video",
+	"plugin.video.reshet.video",
+	"plugin.video.wallaNew.video"	
 ]

@@ -206,6 +206,23 @@ Added Trakt Manager
 			</supportedcontent>
 		</extension>
 	</addon>
+  <addon id="plugin.program.sdarot.tv" name="Sdarot.Tv Maintenance" version="1.0.5" provider-name="Sdarot"> 
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Sdarot.Tv Maintenance</summary>
+    <summary lang="he">Sdarot.Tv &#x5EA;&#x5D7;&#x5D6;&#x5D5;&#x5E7;&#x5D4;</summary>
+    <language>en</language>
+    <description lang="en">Sdarot.Tv Maintenance</description>
+    <description lang="he">Sdarot.Tv &#x5EA;&#x5D7;&#x5D6;&#x5D5;&#x5E7;&#x5D4;</description>
+     <platform>all</platform>
+  </extension>
+</addon>
   <addon id="plugin.program.thecrewiz" name="[COLOR orchid]THE CREW WIZARD[/COLOR]" version="0.0.11" provider-name="The Crew">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -228,6 +245,22 @@ Added Trakt Manager
             <screenshot>resources/art/ss/3.png</screenshot>
         </assets>
     </extension>
+</addon>
+  <addon id="plugin.video.MakoTV" name="MakoTV (web)" version="1.2.0" provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch MakoTV Videos</summary>
+		<description lang="en">Watch Mako Video content from MakoTV website.</description>
+		<summary lang="he">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5DD; &#x5DE;&#x5D0;&#x5EA;&#x5E8; MakoTV</summary>
+		<description lang="he">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5DD; &#x5DE;&#x5D0;&#x5EA;&#x5E8; MakoTV.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
   <addon id="plugin.video.beatport.mod" name="Beatport Mod" version="1.4" provider-name="frenchdj">
 	<requires>
@@ -393,6 +426,29 @@ INFO: For latest changes see Changelog within Tools of add-on.
         </news>
     </extension>
 </addon>
+  <addon id="plugin.video.hotVOD.video" name="Hot VOD" version="1.1.7" provider-name="sbentin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="Hot.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Hot video contents.</summary>
+        <summary lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5EA;&#x5D5;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; VOD &#x5DE;&#x5D0;&#x5EA;&#x5E8; &#x5D4;&#x5D5;&#x5D8;</summary>
+        <description lang="en">Watch Hot Video contents from Hot.ynet.co.il.</description>
+        <description lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5DE;&#x5D2;&#x5D5;&#x5D5;&#x5DF; &#x5D4;&#x5EA;&#x5D5;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5D5;&#x5D4;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5E0;&#x5D9;&#x5EA;&#x5E0;&#x5D5;&#x5EA; &#x5DC;&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5DE;&#x5D0;&#x5EA;&#x5E8; hot.ynet.co.il</description>
+        <disclaimer>This addon parse Hot's site, you should check Hot's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>	
+    </extension>
+</addon>
   <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.5.5" provider-name="nil">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
@@ -412,6 +468,29 @@ INFO: For latest changes see Changelog within Tools of add-on.
 			</supportedcontent>
 		</extension>
 	</addon>
+  <addon id="plugin.video.makoTV.video" name="Mako TV" version="1.35.1" provider-name="sbentin \V Master">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="Mako.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Mako video contents.</summary>
+        <summary lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5EA;&#x5D5;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D0;&#x5EA;&#x5E8; &#x5DE;&#x5D0;&#x5E7;&#x5D5;</summary>
+        <description lang="en">Watch Mako Video contents from Mako Application for cellular.</description>
+        <description lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5DE;&#x5D2;&#x5D5;&#x5D5;&#x5DF; &#x5D4;&#x5EA;&#x5D5;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5D5;&#x5D4;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5E0;&#x5D9;&#x5EA;&#x5E0;&#x5D5;&#x5EA; &#x5DC;&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5D0;&#x5DE;&#x5E6;&#x5E2;&#x5D5;&#x5EA; &#x5D0;&#x5E4;&#x5DA;&#x5D9;&#x5E7;&#x5E6;&#x5D9;&#x5D9;&#x5EA; &#x5DE;&#x5D0;&#x5E7;&#x5D5; &#x5D1;&#x5D8;&#x5DC;&#x5E4;&#x5D5;&#x5DF; &#x5D4;&#x5E1;&#x5DC;&#x5D5;&#x5DC;&#x5E8;&#x5D9;</description>
+        <disclaimer>This addon connects to Mako site, you should check Mako's TOS on android before using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>	
+    </extension>
+</addon>
   <addon id="plugin.video.mixcloud.mod" name="Mixcloud Mod" version="1.0" provider-name="frenchdj">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -512,6 +591,54 @@ v0.16.3 (2020-01-18)
 -Many improvements to the code
     </news>
   </extension>
+</addon>
+  <addon id="plugin.video.reshet.video" name="&#x5E8;&#x5E9;&#x5EA;" version="1.3.5" provider-name="sbentin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="reshet.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Reshet video contents.</summary>
+        <summary lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5EA;&#x5D5;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D0;&#x5E4;&#x5DC;&#x5D9;&#x5E7;&#x5E6;&#x5D9;&#x5D9;&#x5EA; &#x5D0;&#x5E0;&#x5D3;&#x5E8;&#x5D5;&#x5D9;&#x5D3; &#x5E9;&#x5DC; &#x5E8;&#x5E9;&#x5EA;</summary>
+        <description lang="en">Watch contents from Reshet's android application.</description>
+        <description lang="he">&#x5E6;&#x5E4;&#x5D4; &#x5D1;&#x5DE;&#x5D2;&#x5D5;&#x5D5;&#x5DF; &#x5D4;&#x5EA;&#x5D5;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5D5;&#x5D4;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5E0;&#x5D9;&#x5EA;&#x5E0;&#x5D5;&#x5EA; &#x5DC;&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5DE;&#x5D4;&#x5E4;&#x5DC;&#x5D0;&#x5D2;&#x5D9;&#x5DF; &#x5E9;&#x5DC; &#x5E8;&#x5E9;&#x5EA; &#x5DC;&#x5D0;&#x5E0;&#x5D3;&#x5E8;&#x5D5;&#x5D9;&#x5D3;</description>
+        <disclaimer>This addon parse Reshets's android application, you should check Reshet's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>	
+    </extension>
+</addon>
+  <addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.5.9" provider-name="Sdarot">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.urllib3" version="1.22" optional="true"/>
+        
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
+        <summary lang="he">&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5DE;&#x5EA;&#x5D5;&#x5DA; &#x5D4;&#x5D0;&#x5EA;&#x5E8; Sdarot.Tv</summary>
+        <description lang="en">Sdarot is a site that deals with direct viewing of various series from Israel and abroad. All series are on site contain subtitles, Israeli series also has translation sometimes. sdarot lets watch thousands of different series and tens of thousands of different episodes free! The site sdarot Updated on a daily base and allows direct viewing of innovative technologies while ensuring maximum quality without compromise.</description>
+        <description lang="he">&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5D9;&#x5E0;&#x5D5; &#x5D0;&#x5EA;&#x5E8; &#x5D4;&#x5E2;&#x5D5;&#x5E1;&#x5E7; &#x5D1;&#x5E6;&#x5E4;&#x5D9;&#x5D9;&#x5D4; &#x5D9;&#x5E9;&#x5D9;&#x5E8;&#x5D4; &#x5E9;&#x5DC; &#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5D5;&#x5E0;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5E8;&#x5E5; &#x5D5;&#x5DE;&#x5D7;&#x5D5;"&#x5DC;. &#x5DB;&#x5DC; &#x5D4;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5DE;&#x5D7;"&#x5D5;&#x5DC; &#x5D4;&#x5E0;&#x5DE;&#x5E6;&#x5D0;&#x5D5;&#x5EA; &#x5D1;&#x5D0;&#x5EA;&#x5E8; &#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5DE;&#x5DB;&#x5D9;&#x5DC;&#x5D5;&#x5EA; &#x5EA;&#x5E8;&#x5D2;&#x5D5;&#x5DD; &#x5DC;&#x5E2;&#x5D1;&#x5E8;&#x5D9;&#x5EA;, &#x5D2;&#x5DD; &#x5D1;&#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5D9;&#x5E9;&#x5E8;&#x5D0;&#x5DC;&#x5D9;&#x5D5;&#x5EA; &#x5D9;&#x5E9; &#x5EA;&#x5E8;&#x5D2;&#x5D5;&#x5DD; &#x5DC;&#x5E2;&#x5EA;&#x5D9;&#x5DD;. &#x5D0;&#x5EA;&#x5E8; &#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5DE;&#x5D0;&#x5E4;&#x5E9;&#x5E8; &#x5E6;&#x5E4;&#x5D9;&#x5D9;&#x5D4; &#x5D9;&#x5E9;&#x5D9;&#x5E8;&#x5D4; &#x5D7;&#x5D9;&#x5E0;&#x5DD; &#x5DC;&#x5D0;&#x5DC;&#x5E4;&#x5D9; &#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5D5;&#x5E0;&#x5D5;&#x5EA; &#x5D5;&#x5E2;&#x5E9;&#x5E8;&#x5D5;&#x5EA; &#x5D0;&#x5DC;&#x5E4;&#x5D9; &#x5E4;&#x5E8;&#x5E7;&#x5D9;&#x5DD; &#x5E9;&#x5D5;&#x5E0;&#x5D9;&#x5DD; &#x5D1;&#x5D7;&#x5D9;&#x5E0;&#x5DD;! &#x5D0;&#x5EA;&#x5E8; &#x5E1;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5DE;&#x5EA;&#x5E2;&#x5D3;&#x5DB;&#x5DF; &#x5E2;&#x5DC; &#x5D1;&#x5E1;&#x5D9;&#x5E1; &#x5D9;&#x5D5;&#x5DE;&#x5D9; &#x5D5;&#x5DE;&#x5D0;&#x5E4;&#x5E9;&#x5E8; &#x5E6;&#x5E4;&#x5D9;&#x5D9;&#x5D4; &#x5D9;&#x5E9;&#x5D9;&#x5E8;&#x5D4; &#x5D1;&#x5D8;&#x5DB;&#x5E0;&#x5D5;&#x5DC;&#x5D5;&#x5D2;&#x5D9;&#x5D5;&#x5EA; &#x5D7;&#x5D3;&#x5E9;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5EA;&#x5D5;&#x5DA; &#x5D4;&#x5E7;&#x5E4;&#x5D3;&#x5D4; &#x5E2;&#x5DC; &#x5D0;&#x5D9;&#x5DB;&#x5D5;&#x5EA; &#x5DE;&#x5E7;&#x5E1;&#x5D9;&#x5DE;&#x5DC;&#x5D9;&#x5EA; &#x5DC;&#x5DC;&#x5D0; &#x5E4;&#x5E9;&#x5E8;&#x5D5;&#x5EA;.</description>
+        <news>[B]Version 2.5.9[/B][CR]Changes inside addon to fit site changes.</news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+    </extension>
 </addon>
   <addon id="plugin.video.seren" version="1.6.9" name="Seren" provider-name="Nixgates">
 	<requires>
@@ -1048,7 +1175,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         </assets>
     </extension>
 </addon>
-  <addon id="service.subtitles.apollo" name="Apollo Subs" version="1.0.8" provider-name="Apollo Group TV">
+  <addon id="service.subtitles.apollo" name="Apollo Subs" version="1.1.0" provider-name="Apollo Group TV">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1"/>
