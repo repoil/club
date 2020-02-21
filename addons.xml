@@ -330,6 +330,30 @@ Thanks to Twilight for helping me with the Beatport categories.</description>
 		<news/>
 	</extension>
 </addon>
+  <addon id="plugin.video.destinyds" name="Destiny of Deathstar" version="1.4.0" provider-name="Dark Child">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+	<import addon="script.common.plugin.cache" version="2.5.5"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+	<import addon="script.module.futures" version="2.2.0"/>
+	<import addon="script.module.universalscrapers"/>
+	<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+	<import addon="script.module.feedparser"/>
+	<import addon="script.module.dateutil"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fork of Destiny</summary>
+    <description lang="en">Destiny and Deathstar have been united. Tweaked Version by DaB.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
   <addon id="plugin.video.exodusredux" version="2.0.3a" name="Exodus Redux" provider-name="I-A-C">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -359,6 +383,20 @@ Thanks to Twilight for helping me with the Beatport categories.</description>
 		</assets>
 		<news/>
 	</extension>
+</addon>
+  <addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description/>
+        <platform>all</platform>
+    </extension>
 </addon>
   <addon id="plugin.video.fdj.hd" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="2.5" provider-name="frenchdj">
   <requires>
@@ -509,6 +547,23 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
+  <addon id="plugin.video.movixws" name="Movix Live" version="1.4.4" provider-name="Movix">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+    
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Movix Live</summary>
+    <description lang="he">Movix Live</description>
+    <platform>all</platform>
+  </extension>
+</addon>
   <addon id="plugin.video.netflix" name="Netflix" version="0.16.4" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
@@ -590,6 +645,40 @@ v0.16.3 (2020-01-18)
 -Generally optimized addon speed
 -Many improvements to the code
     </news>
+  </extension>
+</addon>
+  <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.3.0" provider-name="Avigdor and Nux007">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader</summary>
+    <summary lang="he">Playlist Loader</summary>
+    <description lang="en">Playlist Loader</description>
+    <description lang="he">Playlist Loader</description>
+    <platform>all</platform>
+	<news>
+1.3.0
+- Added default icons.
+- Added transparency to existing icons for better themes integration.
+- Added virtual directories feature allowing a better categorization of m3u lists.
+- Refresh favourites list when moving an item.
+- Ability to move playlists root and directories sides.
+- Refresh playlists and directories when moving an item.
+- Disabled TvDb and MovieDb for now ( waiting for improvements )
+
+1.2.1
+- Taking ownership of the addon, see : https://github.com/avigdork/xbmc-avigdork/pull/8#issuecomment-416955692
+- Fixed regex =&gt; grouping issue when tvg-logo was empty.
+- Added icon image also when items are grouped.
+- Regex fix for title containing comas.
+- Added TheTvDb scan for each lists in contextual menu ( beta ).
+
+	</news>
   </extension>
 </addon>
   <addon id="plugin.video.reshet.video" name="&#x5E8;&#x5E9;&#x5EA;" version="1.3.5" provider-name="sbentin">
@@ -783,6 +872,34 @@ Implement new listall endpoint for Premiumize cloud scraping (decreased scrape t
 More minor bugfixes (honestly could not list them all)
 		</news>
 	</extension>
+</addon>
+  <addon id="plugin.video.sport365.live" name="Sport365" version="2.6.10.1" provider-name="Bugatsinho">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+        <import addon="plugin.video.f4mTester" version="2.7.2"/>
+        <import addon="script.module.streamlink.base" version="2019.06.23"/>
+        <import addon="script.module.pyxbmct" version="1.2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Sport365 originally made by GalAnonim</summary>
+    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it&#x2019;s intended use, it is simply a third party plugin which has been added to your system.</description>
+    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>https://bugatsinho.github.io</website>
+    <twitter>@bugatsinho</twitter>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.png</fanart>
+  </assets>
+  <news>2.6.10 18-01-2020
+- Just fix regex issues.Streams could not play!</news>
+  </extension>
 </addon>
   <addon id="plugin.video.spotify.mod" name="Spotify Mod" version="1.5" provider-name="frenchdj">
 	<requires>
@@ -1059,7 +1176,29 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <news>v0.0.1.98 - Scraper updates and language additions</news>
     </extension>
 </addon>
-  <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.37" provider-name="jsergio">
+  <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.3" provider-name="Total Revolution">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.2.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+    <import addon="script.module.beautifulsoup" version="2.1.31"/>
+    <import addon="script.module.unidecode" version="0.4.16"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Python Koding All In One</summary>
+    <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development.</description>
+    <disclaimer lang="en"/>
+    <language/>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum>http://totalrevolution.tv/forum</forum>
+    <website>http://totalrevolution.tv</website>
+    <news>Added extra art options to Custom_Dialog and new Merge_Dict function</news>
+    <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
+  </extension>
+</addon>
+  <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="plugin.video.youtube" optional="true"/>
@@ -1173,6 +1312,21 @@ This is a Non-profit resource, organized solely for educational purposes which i
             <icon>icon.png</icon>
             <fanart>fanart.png</fanart>
         </assets>
+    </extension>
+</addon>
+  <addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
     </extension>
 </addon>
   <addon id="service.subtitles.apollo" name="Apollo Subs" version="1.1.0" provider-name="Apollo Group TV">

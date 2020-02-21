@@ -54,5 +54,20 @@
 	"cubicle":{
 		"xml":"https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/addons.xml",
 		"zip":"https://raw.githubusercontent.com/cubicle-vdo/xbmc-israel/master/repo"
+	},
+	"Movix":{
+		"xml":"http://raw.github.com/Movixme/Movix/master/addons.xml",
+		"zip":"http://raw.github.com/Movixme/Movix/master/zip"
+	},
+	"grind":{
+		"xml":"http://grindhousekodi.tk/grindhouse/repo/addons.xml",
+		"zip":"http://grindhousekodi.tk/grindhouse/repo/"
+	},
+	"bugatsinho":{
+		"xml":"https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml",
+		"zip":"https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips"
+	},
+	"Nux007":{
+		"xml":"https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml"
 	}
 }

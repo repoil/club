@@ -22,5 +22,9 @@
 	"plugin.video.MakoTV",
 	"plugin.video.makoTV.video",
 	"plugin.video.reshet.video",
-	"plugin.video.wallaNew.video"	
+	"plugin.video.wallaNew.video",
+	"plugin.video.movixws",
+	"plugin.video.destinyds",
+	"plugin.video.sport365.live",
+	"plugin.video.playlistLoader"
 ]
