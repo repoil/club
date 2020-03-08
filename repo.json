@@ -76,7 +76,9 @@
 	"Tempest":{
 		"xml":"https://raw.githubusercontent.com/Tempest0580/temptv/master/zips/addons.xml"
 	},		
-
+	"CaptainLieutenantMaverick":{
+		"xml":"https://raw.githubusercontent.com/CaptainLieutenantMaverick/zips/master/addons.xml"
+	},
 	"cy4root":{
 		"xml":"https://raw.githubusercontent.com/cy4root2/plugins/master/addons.xml"
 	}

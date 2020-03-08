@@ -659,6 +659,39 @@ v1.0.0 (2020-03-06)
     </news>
   </extension>
 </addon>
+  <addon id="plugin.video.numbersbynumbers" version="2.0.2.5" name="[COLOR white][B]NuMb3r5[/B][/COLOR]" provider-name="[COLOR lime][B]NuMb3r5[/B][/COLOR]">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.numbersbynumbers"/>
+		<import addon="script.numbersbynumbers.artwork"/>
+		<import addon="script.numbersbynumbers.metadata"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.metahandler"/>
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="numbersbynumbers.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Movies/TV Shows/Music/Documentaries</summary>
+		<description>Please remember that NuMb3r5 is not an official part of the Kodi media player you are running, and therefore is not to be mentioned within official support channels of Kodi, this addon has nothing to do with the media player itself, nor it&#x2019;s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider. Updated and refactored by someone. Originally created by others.</disclaimer>
+		<platform>all</platform>
+		<license/>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/media/screenshot-01.jpg</screenshot>
+			<screenshot>resources/media/screenshot-02.jpg</screenshot>
+			<screenshot>resources/media/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>V2.0.2.5
+- The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</news>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+	</extension>
+</addon>
   <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.3.0" provider-name="Avigdor and Nux007">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1247,6 +1280,20 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <description lang="en"/>    
   </extension>
 </addon>
+  <addon id="script.module.numbersbynumbers" name="[COLOR white]NuMb3r5 Module[/COLOR]" version="1.00.090" provider-name="NuMb3r5">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">NuMb3r5 Module</summary>
+        <assets>
+          <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
   <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.104" provider-name="Addons4Kodi">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
@@ -1291,28 +1338,6 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <news>Added extra art options to Custom_Dialog and new Merge_Dict function</news>
     <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
   </extension>
-</addon>
-  <addon id="script.module.python.koding.aio.alt" name="Python Koding AIO Alternate" version="1.1" provider-name="Total Revolution">
-    <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.resolveurl"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.beautifulsoup"/>
-        <import addon="script.module.unidecode"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Python Koding All In One</summary>
-        <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development. This is an alterrnate fork that uses ResolveURL instead of URL Resolver.</description>
-        <disclaimer lang="en"/>
-        <language/>
-        <license>Creative Commons 4.0-NC-ND</license>
-        <forum>http://totalrevolution.tv/forum</forum>
-        <website>http://totalrevolution.tv</website>
-        <news>1.0 Stable release</news>
-        <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
-    </extension>
 </addon>
   <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38" provider-name="jsergio">
     <requires>
@@ -1430,6 +1455,34 @@ The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
 This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <license>Beerware rev. 42</license>
 		<platform>all</platform>
+	</extension>
+</addon>
+  <addon id="script.numbersbynumbers.artwork" version="1.0.9" name="[COLOR white]NuMb3r5 Artwork[/COLOR]" provider-name="NuMb3r5">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>NuMb3r5 Artwork</summary>
+		<description>Themes for NuMbErS are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+        <assets>
+	      <icon>icon.png</icon>
+		</assets>		
+	</extension>
+</addon>
+  <addon id="script.numbersbynumbers.metadata" version="1.0.10" name="[COLOR white]NuMb3r5 Metadata[/COLOR]" provider-name="NuMb3r5">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>NuMb3r5 Metadata</summary>
+		<description>Metadata for NuMb3r5 are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+        <assets>
+	      <icon>icon.png</icon>
+		</assets>		
 	</extension>
 </addon>
   <addon id="script.thecrew.artwork" version="0.0.30" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
