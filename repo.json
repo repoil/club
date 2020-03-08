@@ -69,5 +69,15 @@
 	},
 	"Nux007":{
 		"xml":"https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml"
+	},
+	"jsergio":{
+		"xml":"https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml"
+	},	
+	"Tempest":{
+		"xml":"https://raw.githubusercontent.com/Tempest0580/temptv/master/zips/addons.xml"
+	},		
+
+	"cy4root":{
+		"xml":"https://raw.githubusercontent.com/cy4root2/plugins/master/addons.xml"
 	}
 }

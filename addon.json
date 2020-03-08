@@ -1,6 +1,6 @@
 [
 	"plugin.video.exodusredux",
-	"plugin.program.thecrewiz",
+	"plugin.video.thecrew",
 	"plugin.video.venom",
 	"plugin.video.covenant",
 	"plugin.video.themagicdragon",
@@ -26,5 +26,10 @@
 	"plugin.video.movixws",
 	"plugin.video.destinyds",
 	"plugin.video.sport365.live",
-	"plugin.video.playlistLoader"
+	"plugin.video.playlistLoader",
+	"script.module.resolveurl",
+	"plugin.video.beats.hd",
+	"plugin.video.youtube",
+	"plugin.video.numbersbynumbers",
+	"plugin.video.laplaza"
 ]
