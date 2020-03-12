@@ -1,3 +1,6 @@
+[B]4.1.9[/B]
++ Fix: My List not working
+
 [B]4.1.8[/B]
 + Fix: Multi-lang TV show/Movies name and plot
 + Add: Year 2020
