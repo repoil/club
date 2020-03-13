@@ -81,5 +81,8 @@
 	},
 	"cy4root":{
 		"xml":"https://raw.githubusercontent.com/cy4root2/plugins/master/addons.xml"
-	}
+	},
+	"kodi1":{
+		"xml":"https://raw.githubusercontent.com/kodi1/kodi1.github.io/master/repo/addons.xml"
+	}	
 }

@@ -31,5 +31,8 @@
 	"plugin.video.beats.hd",
 	"plugin.video.youtube",
 	"plugin.video.numbersbynumbers",
-	"plugin.video.laplaza"
+	"plugin.video.laplaza",
+	"plugin.program.super.favourites",
+	"plugin.video.tubi",
+	"plugin.video.releaseBB"
 ]
