@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.fen" version="1.6.04" name="Fen" provider-name="Tiki">
+<addon id="plugin.video.fen" version="1.6.05" name="Fen" provider-name="Tiki">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
         <import addon="script.module.tikimeta" version="1.0.0"/>
-        <import addon="script.module.resolveurl" version="1.0.0"/>
         <import addon="script.module.openscrapers"/>
+        <import addon="script.module.resolveurl" version="1.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/fen.py">
         <provides>video audio</provides>

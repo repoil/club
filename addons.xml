@@ -405,14 +405,14 @@ On twitter, you send me a private message to get the credentials.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" version="1.6.04" name="Fen" provider-name="Tiki">
+  <addon id="plugin.video.fen" version="1.6.05" name="Fen" provider-name="Tiki">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
         <import addon="script.module.tikimeta" version="1.0.0"/>
-        <import addon="script.module.resolveurl" version="1.0.0"/>
         <import addon="script.module.openscrapers"/>
+        <import addon="script.module.resolveurl" version="1.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/fen.py">
         <provides>video audio</provides>
@@ -1355,10 +1355,11 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.104" provider-name="Addons4Kodi">
+  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.105" provider-name="Addons4Kodi">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.requests"/>
     </requires>
     <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.python.pluginsource" library="lib/default.py">
@@ -1504,7 +1505,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.tikimeta" version="1.1.36" name="Tiki Meta Module" provider-name="Tiki">
+  <addon id="script.module.tikimeta" version="1.1.37" name="Tiki Meta Module" provider-name="Tiki">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
