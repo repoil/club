@@ -573,7 +573,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.netflix" name="Netflix" version="1.0.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <addon id="plugin.video.netflix" name="Netflix" version="1.1.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -596,8 +596,11 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <description lang="de_DE">Addon f&#xFC;r Netflix VOD Services</description>
     <disclaimer lang="de_DE">M&#xF6;glicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation &#xFC;berpr&#xFC;fen.</disclaimer>
     <summary lang="en_GB">Netflix</summary>
-    <description lang="en_GB">Netflix VOD Services Addon</description>
-    <disclaimer lang="en_GB">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <description lang="en_GB">Netflix VOD Services Add-on</description>
+    <disclaimer lang="en_GB">Some parts of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <summary lang="el_GR">&#x39D;&#x3AD;&#x3C4;&#x3C6;&#x3BB;&#x3B9;&#x3BE;</summary>
+    <description lang="el_GR">&#x3A0;&#x3C1;&#x3CC;&#x3C3;&#x3B8;&#x3B5;&#x3C4;&#x3BF; &#x3C5;&#x3C0;&#x3B7;&#x3C1;&#x3B5;&#x3C3;&#x3B9;&#x3CE;&#x3BD; &#x3BA;&#x3B1;&#x3C4;&#x3AC; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3B3;&#x3B5;&#x3BB;&#x3AF;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x39D;&#x3AD;&#x3C4;&#x3C6;&#x3BB;&#x3B9;&#x3BE;</description>
+    <disclaimer lang="el_GR">&#x39F;&#x3C1;&#x3B9;&#x3C3;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3AD;&#x3C1;&#x3B7; &#x3B1;&#x3C5;&#x3C4;&#x3BF;&#x3CD; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3BC;&#x3B7;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3CC;&#x3BC;&#x3B9;&#x3BC;&#x3B1; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C7;&#x3CE;&#x3C1;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3C4;&#x3BF;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3C4;&#x3B5; - &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3CE; &#x3B5;&#x3BB;&#x3AD;&#x3B3;&#x3BE;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3C4;&#x3BF;&#x3C0;&#x3B9;&#x3BA;&#x3BF;&#x3CD;&#x3C2; &#x3BD;&#x3CC;&#x3BC;&#x3BF;&#x3C5;&#x3C2; &#x3C0;&#x3C1;&#x3B9;&#x3BD; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3B3;&#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3C3;&#x3C4;&#x3B1;&#x3C3;&#x3B7;.</disclaimer>
     <summary lang="nl_NL">Netflix</summary>
     <description lang="nl_NL">Bekijk Netflix films en tvprogramma's in Kodi.</description>
     <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
@@ -607,8 +610,8 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <summary lang="ko_KR">Netflix</summary>
     <description lang="ko_KR">Netflix VOD &#xC11C;&#xBE44;&#xC2A4;&#xC560;&#xB4DC;&#xC628;</description>
     <disclaimer lang="ko_KR">&#xC77C;&#xBD80; &#xAD6D;&#xAC00;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xC560;&#xB4DC;&#xC628;&#xC758; &#xC77C;&#xBD80;&#xAC00; &#xBD88;&#xBC95;&#xC77C; &#xC218;&#xB3C4; &#xC788;&#xC73C;&#xB2C8;, &#xC124;&#xCE58;&#xD558;&#xAE30;&#xC804; &#xAD00;&#xB828; &#xBC95;&#xC744; &#xD655;&#xC778;&#xD558;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</disclaimer>
-    <description lang="it_IT">Netflix Addon servizi VOD</description>
-    <disclaimer lang="it_IT">Alcune parti di questo addon potrebbero non essere legali nel proprio paese di residenza - si prega di verificare le leggi locali prima dell'installazione.</disclaimer>
+    <description lang="it_IT">Netflix Add-on servizi VOD</description>
+    <disclaimer lang="it_IT">Alcune parti di questo add-on potrebbero non essere legali nel proprio paese di residenza - si prega di verificare le leggi locali prima dell'installazione.</disclaimer>
     <summary lang="hu_HU">Netflix</summary>
     <description lang="hu_HU">Netflix VOD kieg&#xE9;sz&#xED;t&#x151; a Kodihoz</description>
     <disclaimer lang="hu_HU">El&#x151;fordulhat, hogy a kieg&#xE9;sz&#xED;t&#x151; n&#xE9;h&#xE1;ny r&#xE9;sze nem t&#xF6;rv&#xE9;nyes az &#xD6;n orsz&#xE1;g&#xE1;ban - telep&#xED;t&#xE9;s el&#x151;tt t&#xE1;j&#xE9;koz&#xF3;djon a helyi t&#xF6;rv&#xE9;nyekr&#x151;l.</disclaimer>
@@ -632,30 +635,22 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.0.0 (2020-03-06)
--Added watched status sync with Netflix services WIP (details on github wiki)
--Reworked add-on/kodi auto-configuration based on device and system characteristics
--Reworked MSL service
--Added support to MSL switch profile, this fixes very old issues:
-  -Requests are now performed with the right msl profile
-  -No more missing audio languages on non-owner profiles
-  -No more missing subtitle languages on non-owner profiles
-  -No more video not available error when main profile has age limits and other profile are set as adults
-  -You can update watched status on all profiles
--Added workaround to fix 4k media flag with android device 4k capable
--Added turkish language
--Changes on nfsession profile switch in order to get the profiles cookies
--Improved ESN generation on android devices
--Automatically turn off omx player on raspberry (not compatible)
--Fixed the error when opening the Export menu caused by too many exported items
--Fixed an issue that causing delayed start of services features after start playback
--Fixed issues with ios/tvos restrictions (but due to missing widevine library for now are not supported)
--Fixed service databases upgrade
--Fixed an issue that caused wrong behaviour with Reset ESN
--Fixed an issue that caused wrong behaviour with highlighted titles
--Fixed a rare issue that caused "stream continuity" to stop working
--Updated jp, kr, it, pl, hu, hr, de, fr, es translations
--A lot of other code changes
+v1.1.0 (2020-03-20)
+-Added more supplemental info to plot info
+-Added customizable color to suppl. plot info
+-Added Greek language
+-Added more results to recommendations menu
+-Improved auto-login feature (now called "profile auto-selection")
+-Improved password request in particular circumstances
+-Improvements to recognize external calls to add-on
+-Fixed msl issues with login with different account after a logout
+-Fixed an issue in the strm resume workaround
+-Fixed an issue caused broken configuration wizard on L1 android devices
+-Fixed an issue which prevented the loading of profile list with a backslash on the names
+-Fixed an issue which prevented the loading of suppl. info to plot info
+-Fixed an issue caused interruption of sending video status progress after video pause or seek
+-Updated it, de, nl translations
+-Other minor fixes
     </news>
   </extension>
 </addon>
@@ -1089,7 +1084,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 	</assets>
   </extension>
 </addon>
-  <addon id="plugin.video.venom" version="3.5.5" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+  <addon id="plugin.video.venom" version="3.5.6" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -1128,12 +1123,11 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.5.5 - March 19, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Dialog source select now respects setting for
-    "Multiline Source list" like Directory source list.[/I]
-[COLOR yellow]--[/COLOR][I] Added setting to "Sort torrents by size".  The new
-    setting is enabled by default and found under
-    "Torrent Settings".[/I]
+[B][COLOR red]Update - v3.5.6 - March 20, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed torrent cache check for when debrid service
+    is anything other than PM or RD it would drop other service.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Movies-In Theaters. Some group advanced
+    filtering is currently no longer working on IMDB.[/I]
 		</news>
 	</extension>
 </addon>
