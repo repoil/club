@@ -573,7 +573,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.netflix" name="Netflix" version="1.1.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <addon id="plugin.video.netflix" name="Netflix" version="1.1.1" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -635,22 +635,9 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.1.0 (2020-03-20)
--Added more supplemental info to plot info
--Added customizable color to suppl. plot info
--Added Greek language
--Added more results to recommendations menu
--Improved auto-login feature (now called "profile auto-selection")
--Improved password request in particular circumstances
--Improvements to recognize external calls to add-on
--Fixed msl issues with login with different account after a logout
--Fixed an issue in the strm resume workaround
--Fixed an issue caused broken configuration wizard on L1 android devices
--Fixed an issue which prevented the loading of profile list with a backslash on the names
--Fixed an issue which prevented the loading of suppl. info to plot info
--Fixed an issue caused interruption of sending video status progress after video pause or seek
--Updated it, de, nl translations
--Other minor fixes
+v1.1.1 (2020-03-24)
+-Fixed critical bug caused continuous profile switching
+-Fixed unicode decode error to profile auto-selection
     </news>
   </extension>
 </addon>
@@ -1287,6 +1274,15 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <license>MIT</license>
   </extension>
 </addon>
+  <addon id="script.module.cryptopy" name="CryptoPy" version="1.2.6" provider-name="cryptopy.sourceforge.net">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
   <addon id="script.module.exodusredux" name="Exodus Redux Module" version="2.0.5" provider-name="I-A-C">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1418,7 +1414,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
     </extension>
 </addon>
-  <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38" provider-name="jsergio">
+  <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.39" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="plugin.video.youtube" optional="true"/>
