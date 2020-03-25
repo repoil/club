@@ -307,7 +307,7 @@ Thanks to Twilight for helping me with the Beatport categories.</description>
 		<news/>
 	</extension>
 </addon>
-  <addon id="plugin.video.destinyds" name="Destiny of Deathstar" version="1.4.0" provider-name="Dark Child">
+  <addon id="plugin.video.destinyds" name="Destiny of Deathstar" version="1.4.1" provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
@@ -1370,7 +1370,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <news>v0.0.1.98 - Scraper updates and language additions</news>
     </extension>
 </addon>
-  <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.3" provider-name="Total Revolution">
+  <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="1.0" provider-name="Total Revolution">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.urlresolver" version="1.2.0"/>
@@ -1388,7 +1388,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <license>Creative Commons 4.0-NC-ND</license>
     <forum>http://totalrevolution.tv/forum</forum>
     <website>http://totalrevolution.tv</website>
-    <news>Added extra art options to Custom_Dialog and new Merge_Dict function</news>
+    <news>1.0 Stable release</news>
     <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
   </extension>
 </addon>
@@ -1516,6 +1516,31 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         <news>
         </news>
     </extension>
+</addon>
+  <addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.9" provider-name="Team Universal">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+        
+	<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+            </description>
+            <license>GPL v3</license>
+            <source>https://</source>
+        </extension>
 </addon>
   <addon id="script.myaddon.artwork" version="1.0.8" name="Myaddon Artwork" provider-name="Team Afterbirth">
 	<requires>
