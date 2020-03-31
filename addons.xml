@@ -986,7 +986,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</assets>
 	</extension>
 </addon>
-  <addon id="plugin.video.thecrew" version="0.0.70" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+  <addon id="plugin.video.thecrew" version="0.0.71" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew"/>
@@ -996,7 +996,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         <import addon="script.module.resolveurl"/>
         <import addon="script.module.metahandler"/>
         <import addon="plugin.video.youtube" optional="true"/>
-        <import addon="script.crew.sports" optional="true"/> /&gt;
+        <import addon="script.crew.sports" optional="true"/> 
         <import addon="script.module.inputstreamhelper" version="0.3.3"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="thecrew.py">
@@ -1199,7 +1199,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<platform>all</platform>
 	</extension>
 </addon>
-  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.55" provider-name="The Crew">
+  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.58" provider-name="The Crew">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common"/>
@@ -1211,19 +1211,19 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<import addon="script.module.python.koding.aio.alt" version="1.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>all</provides>
+		<provides>all</provides>
 	</extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
-        <description lang="en">Many come, Many go. The true and dedicated are here.</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">The Crew is a team of individuals that does what it can to provide others, you the best in entertainment.</summary>
+		<description lang="en">Many come, Many go. The true and dedicated are here.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
   <addon id="script.exodusredux.artwork" version="1.0.2" name="Exodus Redux Artwork" provider-name="I-A-C">
 	<requires>
@@ -1473,7 +1473,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 - Updated description</news>
   </extension>
 </addon>
-  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.70" provider-name="The Crew">
+  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.71" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -1645,7 +1645,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
     </extension>
 </addon>
-  <addon id="service.subtitles.apollo" name="Apollo Subs" version="1.1.0" provider-name="Apollo Group TV">
+  <addon id="service.subtitles.apollo" name="Apollo Subs" version="1.1.1" provider-name="Apollo Group TV">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1"/>
