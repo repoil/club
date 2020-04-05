@@ -986,7 +986,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</assets>
 	</extension>
 </addon>
-  <addon id="plugin.video.thecrew" version="0.0.72" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+  <addon id="plugin.video.thecrew" version="0.0.73" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew"/>
@@ -1200,7 +1200,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<platform>all</platform>
 	</extension>
 </addon>
-  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.58" provider-name="The Crew">
+  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.59" provider-name="The Crew">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common"/>
@@ -1474,7 +1474,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 - Updated description</news>
   </extension>
 </addon>
-  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.72" provider-name="The Crew">
+  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.73" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -1581,7 +1581,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		</assets>		
 	</extension>
 </addon>
-  <addon id="script.thecrew.artwork" version="0.0.30" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
+  <addon id="script.thecrew.artwork" version="0.0.31" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
     </requires>
