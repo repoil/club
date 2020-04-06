@@ -1,3 +1,8 @@
+[COLOR dodgerblue][B]Version 1.1.39[/B][/COLOR]
+- ANY PROBLEMS WITH THIS RELEASE, THEN PLEASE CLEAR META CACHE IN FEN TOOLS-->CLEAR LIST AND DATA INFO-->CLEAR META CACHE.
+- Added image fallbacks for Movies and TV Shows since a lot of art on TMDb has gone missing.
+- Other code changes.
+
 [COLOR dodgerblue][B]Version 1.1.38[/B][/COLOR]
 - Fix to english plot fallback when set language plot not available.
 Clear metadata for changes to take effect.
