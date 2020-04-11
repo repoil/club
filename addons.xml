@@ -791,7 +791,7 @@ v1.1.1 (2020-03-24)
         </supportedcontent>
     </extension>
 </addon>
-  <addon id="plugin.video.seren" version="1.6.11" name="Seren" provider-name="Nixgates">
+  <addon id="plugin.video.seren" version="1.6.13" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -834,6 +834,12 @@ v1.1.1 (2020-03-24)
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.13:
+Add workaround on failure to grab user lists
+
+Changelog 1.6.12:
+Fix endpoint for still watching and playing next windows
+
 Changelog 1.6.11:
 Fix provider list not showing due to theme changes
 
