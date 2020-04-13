@@ -405,7 +405,7 @@ On twitter, you send me a private message to get the credentials.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" version="1.6.13" name="Fen" provider-name="Tiki">
+  <addon id="plugin.video.fen" version="1.6.14" name="Fen" provider-name="Tiki">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -791,7 +791,7 @@ v1.1.1 (2020-03-24)
         </supportedcontent>
     </extension>
 </addon>
-  <addon id="plugin.video.seren" version="1.6.14" name="Seren" provider-name="Nixgates">
+  <addon id="plugin.video.seren" version="1.6.15" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -834,6 +834,9 @@ v1.1.1 (2020-03-24)
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.15:
+Adjsut status code responses for Trakt module
+
 Changelog 1.6.14:
 Remove cleaning of depricated settings as it was causing corrupt settings file
 
@@ -1040,7 +1043,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="plugin.video.themagicdragon" name="The Magic Dragon" version="1.35" provider-name="Magic Dragon">
+  <addon id="plugin.video.themagicdragon" name="The Magic Dragon" version="1.36" provider-name="Magic Dragon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
@@ -1364,7 +1367,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.106" provider-name="Addons4Kodi">
+  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.107" provider-name="Addons4Kodi">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -1514,7 +1517,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.tikimeta" version="1.1.40" name="Tiki Meta Module" provider-name="Tiki">
+  <addon id="script.module.tikimeta" version="1.1.41" name="Tiki Meta Module" provider-name="Tiki">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
