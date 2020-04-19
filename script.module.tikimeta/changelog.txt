@@ -1,5 +1,11 @@
+[COLOR dodgerblue][B]Version 1.1.42[/B][/COLOR]
+- ANY PROBLEMS WITH THIS RELEASE, THEN PLEASE CLEAR META CACHE IN FEN TOOLS-->CLEAR LIST AND DATA INFO-->CLEAR META CACHE.
+- Added "Image Resolutions" setting. Set lower for quicker image display at poorer quality, set higher for slower image display at better quality. "Original" is image in best, original quality.
+- Disabled kyradb access (for animated posters). Their site/API is down.
+- Other code changes.
+
 [COLOR dodgerblue][B]Version 1.1.41[/B][/COLOR]
-- Suppressed backup artwork calls to fanart.tv if not enabled in settings.
+- Suppressed backup artwork calls to fanart.tv if fanart.tv is not enabled in settings.
 - Other code changes.
 
 [COLOR dodgerblue][B]Version 1.1.39[/B][/COLOR]
