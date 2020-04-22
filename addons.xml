@@ -573,7 +573,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.netflix" name="Netflix" version="1.1.1" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <addon id="plugin.video.netflix" name="Netflix" version="1.2.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -612,12 +612,21 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <disclaimer lang="ko_KR">&#xC77C;&#xBD80; &#xAD6D;&#xAC00;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xC560;&#xB4DC;&#xC628;&#xC758; &#xC77C;&#xBD80;&#xAC00; &#xBD88;&#xBC95;&#xC77C; &#xC218;&#xB3C4; &#xC788;&#xC73C;&#xB2C8;, &#xC124;&#xCE58;&#xD558;&#xAE30;&#xC804; &#xAD00;&#xB828; &#xBC95;&#xC744; &#xD655;&#xC778;&#xD558;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</disclaimer>
     <description lang="it_IT">Netflix Add-on servizi VOD</description>
     <disclaimer lang="it_IT">Alcune parti di questo add-on potrebbero non essere legali nel proprio paese di residenza - si prega di verificare le leggi locali prima dell'installazione.</disclaimer>
+    <summary lang="es_ES">Netflix</summary>
+    <description lang="es_ES">Complemento para los Servicios VOD de Netflix</description>
+    <disclaimer lang="es_ES">Algunas partes de este complemento pueden no ser legales en su pa&#xED;s de residencia - Por favor, consulte con las leyes locales antes de instalar.</disclaimer>
     <summary lang="hu_HU">Netflix</summary>
     <description lang="hu_HU">Netflix VOD kieg&#xE9;sz&#xED;t&#x151; a Kodihoz</description>
     <disclaimer lang="hu_HU">El&#x151;fordulhat, hogy a kieg&#xE9;sz&#xED;t&#x151; n&#xE9;h&#xE1;ny r&#xE9;sze nem t&#xF6;rv&#xE9;nyes az &#xD6;n orsz&#xE1;g&#xE1;ban - telep&#xED;t&#xE9;s el&#x151;tt t&#xE1;j&#xE9;koz&#xF3;djon a helyi t&#xF6;rv&#xE9;nyekr&#x151;l.</disclaimer>
-    <summary lang="tr_tr">Netflix</summary>
-    <description lang="tr_tr">Netflix VOD Hizmetleri Eklentisi</description>
-    <disclaimer lang="tr_tr">Bu eklentinin baz&#x131; b&#xF6;l&#xFC;mleri ikamet etti&#x11F;iniz &#xFC;lkede yasal olmayabilir - l&#xFC;tfen y&#xFC;klemeden &#xF6;nce yerel yasalar&#x131;n&#x131;za bak&#x131;n.</disclaimer>
+    <summary lang="tr_TR">Netflix</summary>
+    <description lang="tr_TR">Netflix VOD Hizmetleri Eklentisi</description>
+    <disclaimer lang="tr_TR">Bu eklentinin baz&#x131; b&#xF6;l&#xFC;mleri ikamet etti&#x11F;iniz &#xFC;lkede yasal olmayabilir - l&#xFC;tfen y&#xFC;klemeden &#xF6;nce yerel yasalar&#x131;n&#x131;za bak&#x131;n.</disclaimer>
+    <summary lang="ro_RO">Netflix</summary>
+    <description lang="ro_RO">Add-on pentru servicii video la cerere Netflix</description>
+    <disclaimer lang="ro_RO">Unele por&#x21B;iuni ale acestui add-on ar putea fi ilegale &#xEE;n &#x21B;ara &#xEE;n care locui&#x21B;i - v&#x103; rug&#x103;m s&#x103; verifica&#x21B;i legile locale &#xEE;nainte de instalare.</disclaimer>
+    <summary lang="sv_SE">Netflix</summary>
+    <description lang="sv_SE">Netflix VOD Service-till&#xE4;gg</description>
+    <disclaimer lang="sv_SE">Vissa delar av detta till&#xE4;gg kanske inte &#xE4;r lagligt i ditt hemland - kontrollera med dina lokala lagar innan du installerar.</disclaimer>
     <assets>
       <icon>resources/media/icon.png</icon>
       <fanart>resources/media/fanart.jpg</fanart>
@@ -627,7 +636,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
       <screenshot>resources/media/screenshot-04.jpg</screenshot>
       <screenshot>resources/media/screenshot-05.jpg</screenshot>
     </assets>
-    <language>en cs de es hr hu it ja ko nl pl pt sv tr</language>
+    <language>en cs de es hr hu it ja ko nl pl pt ro sv tr</language>
     <platform>all</platform>
     <license>MIT</license>
     <website>https://www.netflix.com</website>
@@ -635,9 +644,25 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.1.1 (2020-03-24)
--Fixed critical bug caused continuous profile switching
--Fixed unicode decode error to profile auto-selection
+v1.2.0 (2020-04-22)
+-Parental control temporary disabled due to Netflix changes
+-New cache management
+-Add-on now is ready to works also on systems with special chars in the system path
+-Implemented profile PIN protection
+-Implemented masked PIN input (Kodi 19)
+-Implemented auto purge cache of expired items
+-Implemented paginated list of seasons
+-Implemented cache to search menu
+-Implemented Up Next also with "Sync of watched status with Netflix" feature
+-Add support to Python 3.8
+-Add title to search page
+-Add profile name to homepage title
+-Add a better handling of lolomo error with sync of watched status enabled
+-Add romanian, swedish translation
+-Improved watched status threshold
+-Improved watched status update in the GUI display
+-Improved catch of possible errors in events module
+To see the full list of changes read the changelog.txt
     </news>
   </extension>
 </addon>
@@ -708,8 +733,9 @@ v1.1.1 (2020-03-24)
 	</news>
   </extension>
 </addon>
-  <addon id="plugin.video.releaseBB" version="1.8.6" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+  <addon id="plugin.video.releaseBB" version="1.9.0" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
+    <import addon="script.module.cloudscraper" version="1.2.34"/>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.t0mm0.common" version="2.1.1"/>
     <import addon="script.module.resolveurl" version="5.0.1"/>
@@ -733,10 +759,8 @@ v1.1.1 (2020-03-24)
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
     <email>bugatsinho@protonmail.com</email>
-    <news>++ [B][COLOR lime]1.8.6[/B][/COLOR] [COLOR gold](03-01-2020)[/COLOR]
-- add foreign movies menu
-- fix search function to point titles link to old2.rlsbb domain
-- add service.py and make function to get the available RLSBB domains</news>
+    <news>+ [B][COLOR lime]1.9.0[/B][/COLOR] [COLOR gold](22-04-2020)[/COLOR]
+- add cloudscraper module to bypass cloudflare</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
@@ -1276,6 +1300,27 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<description>Metadata for Exodus Redux are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+  <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.34" provider-name="venomous">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests"/>
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.pluginsource" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">cloudscraper</summary>
+    <description lang="en_gb">cloudscraper</description>
+    <disclaimer lang="en_gb"/>
+    <language/>
+    <platform>all</platform>
+    <license/>
+    <forum/>
+    <website/>
+    <email/>
+    <source/>
+  </extension>
 </addon>
   <addon id="script.module.covenant" name="Covenant Module" version="1.00.029" provider-name="Covenant">
 	<requires>
