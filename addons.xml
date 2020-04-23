@@ -1196,7 +1196,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			</supportedcontent>	
 		</extension>
 	</addon>
-  <addon id="program.apollo" version="4.1.9" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR] Kodi 18" provider-name="Apollo Group">
+  <addon id="program.apollo" version="4.2.1" name="[COLOR white]Apollo[/COLOR] [COLOR FF028ddd]Group[/COLOR] Kodi 18" provider-name="Apollo Group">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests"/>
