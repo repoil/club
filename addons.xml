@@ -1038,7 +1038,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</assets>
 	</extension>
 </addon>
-  <addon id="plugin.video.thecrew" version="0.0.76" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+  <addon id="plugin.video.thecrew" version="0.0.77" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew"/>
@@ -1253,7 +1253,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<platform>all</platform>
 	</extension>
 </addon>
-  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.61" provider-name="The Crew">
+  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.62a" provider-name="The Crew">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common"/>
@@ -1263,6 +1263,9 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<import addon="script.module.beautifulsoup4"/>
 		<import addon="script.module.resolveurl"/>
 		<import addon="script.module.python.koding.aio.alt" version="1.1"/>
+		<import addon="script.module.pytz"/>
+		<import addon="script.module.js2py"/>
+		<import addon="script.module.pyjsparser"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>all</provides>
@@ -1364,6 +1367,26 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<summary lang="en">Exodus Redux</summary>
 	</extension>
 </addon>
+  <addon id="script.module.js2py" name="js2py" version="0.6.6a" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.pyjsparser" version="2.7.1"/>
+    <import addon="script.module.tzlocal" version="1.5.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language/>
+    <license>MIT</license>
+    <forum/>
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email/>
+  </extension>
+</addon>
   <addon id="script.module.liptonscrapers" name="Lipton Module V2" version="1.1.10" provider-name="Cy4Root">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1439,6 +1462,23 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     </assets>
     <news>v0.0.1.98 - Scraper updates and language additions</news>
     </extension>
+</addon>
+  <addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.2a" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <platform>all</platform>
+    <language/>
+    <license>MIT</license>
+    <forum/>
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email/>
+  </extension>
 </addon>
   <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="1.0" provider-name="Total Revolution">
   <requires>
@@ -1548,7 +1588,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 - Updated description</news>
   </extension>
 </addon>
-  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.76" provider-name="The Crew">
+  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.77" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
@@ -1655,7 +1695,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		</assets>		
 	</extension>
 </addon>
-  <addon id="script.thecrew.artwork" version="0.0.31" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
+  <addon id="script.thecrew.artwork" version="0.0.32" name="[COLOR orchid]THE CREW ARTWORK[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
     </requires>
