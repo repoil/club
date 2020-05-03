@@ -1,4 +1,13 @@
-﻿[COLOR yellow][B]V1.4.1[/B]
+﻿[COLOR yellow][B]V1.4.2[/B]
+ - Changed From Universal Scrapers to Universal Debrid
+ - Reduced Scraping Time.
+ - Added New Jen Plugins
+ - Updated Scrapers
+ - Removed any traces Of URL Resolver
+ - For other premum services pair with ResolveURL
+
+
+[COLOR yellow][B]V1.4.1[/B]
  - Added some more free scrapers
  - Reduced Scraping Time.
  - Added New Jen Plugins
