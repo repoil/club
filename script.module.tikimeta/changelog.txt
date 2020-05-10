@@ -1,3 +1,6 @@
+[COLOR dodgerblue][B]Version 1.1.43[/B][/COLOR]
+- Removed Kyradb Access (animated posters). Service is gone.
+
 [COLOR dodgerblue][B]Version 1.1.42[/B][/COLOR]
 - ANY PROBLEMS WITH THIS RELEASE, THEN PLEASE CLEAR META CACHE IN FEN TOOLS-->CLEAR LIST AND DATA INFO-->CLEAR META CACHE.
 - Added "Image Resolutions" setting. Set lower for quicker image display at poorer quality, set higher for slower image display at better quality. "Original" is image in best, original quality.
