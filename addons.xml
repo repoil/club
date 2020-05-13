@@ -457,7 +457,7 @@ On twitter, you send me a private message to get the credentials.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" version="1.6.20" name="Fen" provider-name="Tiki">
+  <addon id="plugin.video.fen" version="1.6.21" name="Fen" provider-name="Tiki">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -849,7 +849,7 @@ v1.2.2 (2020-05-07)
         </supportedcontent>
     </extension>
 </addon>
-  <addon id="plugin.video.seren" version="1.6.16" name="Seren" provider-name="Nixgates">
+  <addon id="plugin.video.seren" version="1.6.17" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.19.1"/>
@@ -892,6 +892,9 @@ v1.2.2 (2020-05-07)
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.17:
+Update AllDebrid module for new API version
+
 Changelog 1.6.16:
 Fix response.status_code check for Trakt Auth
 
