@@ -1159,7 +1159,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 	</assets>
   </extension>
 </addon>
-  <addon id="plugin.video.venom" version="3.6.6" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+  <addon id="plugin.video.venom" version="3.6.7" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -1198,13 +1198,14 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.6 - May 14, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Remove HVAC and Remove 3D options.
-    Previousely there would be random failures if specific
-    free hosters were enabled.  Some free hosters were
-    missing 'info' keys in the sources dict.  This has been
-    fixed in both Venom and missing keys added to
-    OpenScrapers.[/I]
+[B][COLOR red]Update - v3.6.7 - May 14, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed Library .strm playback. Previous update added ability
+    to compare meta received from tmdbhelper vs. Venom's
+    cached meta and use the largest.  I neglected that .strm
+    files are also player files and meta sent is None type. Now
+    I compare this as well and if the item is cached that meta
+    is now used vs. scraped meta saved locally, which is more
+    limited than Venom's cached meta.[/I]
 		</news>
 	</extension>
 </addon>
@@ -1473,7 +1474,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.110" provider-name="Addons4Kodi">
+  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.0" provider-name="Addons4Kodi">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
