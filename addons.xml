@@ -711,13 +711,11 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
-  <addon id="plugin.video.movixws" name="Movix Live" version="1.4.4" provider-name="Movix">
+  <addon id="plugin.video.movixws" name="Movix Live" version="1.5.4" provider-name="Movix">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
 	<import addon="script.module.resolveurl" version="5.0.00"/>
-    
-	
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
