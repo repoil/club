@@ -34,5 +34,8 @@
 	"plugin.video.laplaza",
 	"plugin.program.super.favourites",
 	"plugin.video.tubi",
-	"plugin.video.releaseBB"
+	"plugin.video.releaseBB",
+	"plugin.video.ego",
+	"plugin.video.cartoon_network",
+	"plugin.video.elementum"
 ]

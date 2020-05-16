@@ -84,5 +84,12 @@
 	},
 	"kodi1":{
 		"xml":"https://raw.githubusercontent.com/kodi1/kodi1.github.io/master/repo/addons.xml"
-	}	
+	}	,
+	"Goldengun":{
+		"xml":"https://raw.githubusercontent.com/Goldengunrepo/install/master/goldengun/zips/addons.xml",
+		"zip":"https://raw.githubusercontent.com/Goldengunrepo/install/master/goldengun/zips"
+	},
+	"jsergio123":{
+		"xml":"https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml"
+	}
 }
