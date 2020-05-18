@@ -1196,7 +1196,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</assets>
 	</extension>
 </addon>
-  <addon id="plugin.video.thecrew" version="0.0.79" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+  <addon id="plugin.video.thecrew" version="0.0.80" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew"/>
@@ -1409,7 +1409,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<platform>all</platform>
 	</extension>
 </addon>
-  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.63a" provider-name="The Crew">
+  <addon id="script.crew.sports" name="[COLOR orchid]THE CREW SPORTS[/COLOR]" version="0.0.65" provider-name="The Crew">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common"/>
@@ -1523,7 +1523,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<summary lang="en">Exodus Redux</summary>
 	</extension>
 </addon>
-  <addon id="script.module.js2py" name="js2py" version="0.6.6a" provider-name="Addons4Kodi">
+  <addon id="script.module.js2py" name="js2py" version="0.6.6" provider-name="Addons4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.six" version="1.11.0"/>
@@ -1619,7 +1619,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <news>v0.0.1.98 - Scraper updates and language additions</news>
     </extension>
 </addon>
-  <addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.2a" provider-name="Addons4Kodi">
+  <addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.2" provider-name="Addons4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
@@ -1635,6 +1635,28 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <source>https://github.com/PiotrDabkowski/pyjsparser</source>
     <email/>
   </extension>
+</addon>
+  <addon id="script.module.python.koding.aio.alt" name="Python Koding AIO Alternate" version="1.1" provider-name="Total Revolution">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.resolveurl"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.beautifulsoup"/>
+        <import addon="script.module.unidecode"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Python Koding All In One</summary>
+        <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development. This is an alterrnate fork that uses ResolveURL instead of URL Resolver.</description>
+        <disclaimer lang="en"/>
+        <language/>
+        <license>Creative Commons 4.0-NC-ND</license>
+        <forum>http://totalrevolution.tv/forum</forum>
+        <website>http://totalrevolution.tv</website>
+        <news>1.0 Stable release</news>
+        <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
+    </extension>
 </addon>
   <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.45" provider-name="jsergio, gujal">
     <requires>
@@ -1700,7 +1722,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 - Updated description</news>
   </extension>
 </addon>
-  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.79" provider-name="The Crew">
+  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.80" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
