@@ -1,3 +1,7 @@
+[COLOR dodgerblue][B]Version 1.1.45[/B][/COLOR]
+- Added more meta info for Movies/TV Shows for new 'Extra Info' Fen feature.
+- Revert clear cache to individually remove window properties.
+
 [COLOR dodgerblue][B]Version 1.1.44[/B][/COLOR]
 - Added more meta info for Movies/TV Shows for new 'Extra Info' Fen feature.
 - Moved to metacache5.db to accommodate 'Extra Info'.
