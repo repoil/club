@@ -554,7 +554,7 @@ On twitter, you send me a private message to get the credentials.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" version="1.7.05" name="Fen" provider-name="Tiki">
+  <addon id="plugin.video.fen" version="1.7.06" name="Fen" provider-name="Tiki">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
@@ -569,11 +569,12 @@ On twitter, you send me a private message to get the credentials.
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <summary>
-            Specializes in Furk and Easynews.
+            Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only.
         </summary>
         <description>
 Specializes in Furk and Easynews(web) account access.
 Also utilizes Openscrapers for those without a Furk or Easynews(web) account.
+This add-on is intended for advanced Kodi users only.
 Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
         </description>
         <platform>all</platform>
@@ -1567,7 +1568,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.006" provider-name="Addons4Kodi">
+  <addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.007" provider-name="Addons4Kodi">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.beautifulsoup4"/>
@@ -1594,6 +1595,8 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			<screenshot/>
 		</assets>
 		<news>
+0.0.2.007
+- More work for Py3 compatibility
 0.0.2.006
 - Small fix to client module for Referer link
 - Added new free hoster WATCHSERIESTV
@@ -1872,7 +1875,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         </assets>
     </extension>
 </addon>
-  <addon id="script.tiki.artwork" version="1.1.9" name="Tiki Artwork" provider-name="Tiki">
+  <addon id="script.tiki.artwork" version="1.1.10" name="Tiki Artwork" provider-name="Tiki">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
