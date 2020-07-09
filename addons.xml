@@ -1645,9 +1645,10 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
     </extension>
 </addon>
-  <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.45" provider-name="jsergio, gujal">
+  <addon id="script.module.resolveurl" name="ResolveURL" version="5.1.2" provider-name="gujal">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
+        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+        <import addon="script.module.six" version="0.0.1"/>
         <import addon="plugin.video.youtube" optional="true"/>
         <import addon="script.module.python.twitch" optional="true"/>
         <import addon="script.module.cryptopy" version="1.2.6" optional="true"/>
@@ -1663,6 +1664,10 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         <summary lang="el">&#x395;&#x3C0;&#x3AF;&#x3BB;&#x3C5;&#x3C3;&#x3B7; &#x3C3;&#x3C5;&#x3BD;&#x3B4;&#x3AD;&#x3C3;&#x3BC;&#x3C9;&#x3BD; &#x3BA;&#x3BF;&#x3B9;&#x3BD;&#x3CE;&#x3BD; &#x3B5;&#x3BE;&#x3C5;&#x3C0;&#x3B7;&#x3C1;&#x3B5;&#x3C4;&#x3B7;&#x3C4;&#x3CE;&#x3BD; &#x3C3;&#x3B5; &#x3BC;&#x3BF;&#x3C1;&#x3C6;&#x3AE; &#x3B2;&#x3AF;&#x3BD;&#x3C4;&#x3B5;&#x3BF; &#x3B9;&#x3BA;&#x3B1;&#x3BD;&#x3CC; &#x3B3;&#x3B9;&#x3B1; &#x3B1;&#x3BD;&#x3B1;&#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3C9;&#x3B3;&#x3AE; &#x3C3;&#x3C4;&#x3BF; XBMC/Kodi.</summary>
         <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
         <description lang="hr">Prilagodi naj&#x10D;e&#x161;&#x107;e URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priklju&#x10D;aka za video dodatke koji zahtjevaju vi&#x161;estruke video izvore.</description>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
   <addon id="script.module.slproxy" name="SLProxy" version="0.0.5" provider-name="devilsport">
