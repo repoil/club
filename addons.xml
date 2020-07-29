@@ -721,7 +721,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.netflix" name="Netflix" version="1.6.1" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <addon id="plugin.video.netflix" name="Netflix" version="1.7.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -741,11 +741,11 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <description lang="cs_CZ">Plugin pro sledov&#xE1;n&#xED; film&#x16F;, seri&#xE1;l&#x16F; online z Netflixu</description>
     <disclaimer lang="cs_CZ">N&#x11B;kter&#xE9; &#x10D;&#xE1;sti tohoto dopl&#x148;ku nemus&#xED; b&#xFD;t ve va&#x161;&#xED; zemi pobytu leg&#xE1;ln&#xED; - p&#x159;ed instalac&#xED; dbejte na va&#x161;e z&#xE1;kony.</disclaimer>
     <summary lang="de_DE">Netflix</summary>
-    <description lang="de_DE">Addon f&#xFC;r Netflix VOD Services</description>
-    <disclaimer lang="de_DE">M&#xF6;glicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation &#xFC;berpr&#xFC;fen.</disclaimer>
+    <description lang="de_DE">Addon f&#xFC;r Netflix VOD-Dienste</description>
+    <disclaimer lang="de_DE">M&#xF6;glicherweise ist die Verwendung dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation &#xFC;berpr&#xFC;fen.</disclaimer>
     <summary lang="en_GB">Netflix</summary>
     <description lang="en_GB">Netflix VOD Services Add-on</description>
-    <disclaimer lang="en_GB">Some parts of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <disclaimer lang="en_GB">The use of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
     <summary lang="el_GR">&#x39D;&#x3AD;&#x3C4;&#x3C6;&#x3BB;&#x3B9;&#x3BE;</summary>
     <description lang="el_GR">&#x3A0;&#x3C1;&#x3CC;&#x3C3;&#x3B8;&#x3B5;&#x3C4;&#x3BF; &#x3C5;&#x3C0;&#x3B7;&#x3C1;&#x3B5;&#x3C3;&#x3B9;&#x3CE;&#x3BD; &#x3BA;&#x3B1;&#x3C4;&#x3AC; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3B3;&#x3B5;&#x3BB;&#x3AF;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x39D;&#x3AD;&#x3C4;&#x3C6;&#x3BB;&#x3B9;&#x3BE;</description>
     <disclaimer lang="el_GR">&#x39F;&#x3C1;&#x3B9;&#x3C3;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3AD;&#x3C1;&#x3B7; &#x3B1;&#x3C5;&#x3C4;&#x3BF;&#x3CD; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3BC;&#x3B7;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3CC;&#x3BC;&#x3B9;&#x3BC;&#x3B1; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C7;&#x3CE;&#x3C1;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3C4;&#x3BF;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3C4;&#x3B5; - &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3CE; &#x3B5;&#x3BB;&#x3AD;&#x3B3;&#x3BE;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3C4;&#x3BF;&#x3C0;&#x3B9;&#x3BA;&#x3BF;&#x3CD;&#x3C2; &#x3BD;&#x3CC;&#x3BC;&#x3BF;&#x3C5;&#x3C2; &#x3C0;&#x3C1;&#x3B9;&#x3BD; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3B3;&#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3C3;&#x3C4;&#x3B1;&#x3C3;&#x3B7;.</disclaimer>
@@ -754,27 +754,39 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
     <summary lang="ja_JP">Netflix</summary>
     <description lang="ja_JP">Netflix VOD &#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x30A2;&#x30C9;&#x30AA;&#x30F3;</description>
-    <disclaimer lang="ja_JP">&#x4E00;&#x90E8;&#x306E;&#x56FD;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x30A2;&#x30C9;&#x30AA;&#x30F3;&#x304C;&#x4E0D;&#x6CD5;&#x3067;&#x3042;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x8A2D;&#x7F6E;&#x3059;&#x308B;&#x524D;&#x306B;&#x5FC5;&#x305A;&#x95A2;&#x9023;&#x6CD5;&#x5F8B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</disclaimer>
+    <disclaimer lang="ja_JP">&#x4E00;&#x90E8;&#x306E;&#x56FD;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x30A2;&#x30C9;&#x30AA;&#x30F3;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x306E;&#x304C;&#x4E0D;&#x6CD5;&#x3067;&#x3042;&#x308A;&#x307E;&#x3059;&#x306E;&#x3067;&#x3001;&#x8A2D;&#x7F6E;&#x3059;&#x308B;&#x524D;&#x306B;&#x5FC5;&#x305A;&#x95A2;&#x9023;&#x6CD5;&#x5F8B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</disclaimer>
     <summary lang="ko_KR">Netflix</summary>
     <description lang="ko_KR">Netflix VOD &#xC11C;&#xBE44;&#xC2A4;&#xC560;&#xB4DC;&#xC628;</description>
-    <disclaimer lang="ko_KR">&#xC77C;&#xBD80; &#xAD6D;&#xAC00;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xC560;&#xB4DC;&#xC628;&#xC758; &#xC77C;&#xBD80;&#xAC00; &#xBD88;&#xBC95;&#xC77C; &#xC218;&#xB3C4; &#xC788;&#xC73C;&#xB2C8;, &#xC124;&#xCE58;&#xD558;&#xAE30;&#xC804; &#xAD00;&#xB828; &#xBC95;&#xC744; &#xD655;&#xC778;&#xD558;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</disclaimer>
+    <disclaimer lang="ko_KR">&#xC77C;&#xBD80; &#xAD6D;&#xAC00;&#xC5D0;&#xC11C;&#xB294; &#xC774; &#xC560;&#xB4DC;&#xC628;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xBD88;&#xBC95;&#xC77C; &#xC218;&#xB3C4; &#xC788;&#xC73C;&#xB2C8;, &#xC124;&#xCE58;&#xD558;&#xAE30;&#xC804; &#xAD00;&#xB828; &#xBC95;&#xC744; &#xD655;&#xC778;&#xD558;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</disclaimer>
     <description lang="it_IT">Netflix Add-on servizi VOD</description>
-    <disclaimer lang="it_IT">Alcune parti di questo add-on potrebbero non essere legali nel proprio paese di residenza - si prega di verificare le leggi locali prima dell'installazione.</disclaimer>
+    <disclaimer lang="it_IT">L'utilizzo di questo add-on potrebbe non essere legale nel vostro paese di residenza - si prega di verificare le leggi in vigore prima dell'installazione.</disclaimer>
     <summary lang="es_ES">Netflix</summary>
     <description lang="es_ES">Complemento para los Servicios VOD de Netflix</description>
-    <disclaimer lang="es_ES">Algunas partes de este complemento pueden no ser legales en su pa&#xED;s de residencia - Por favor, consulte con las leyes locales antes de instalar.</disclaimer>
+    <disclaimer lang="es_ES">El uso de este complemento puede no ser legal en su pa&#xED;s de residencia - Por favor, consulte las leyes locales antes de instalarlo.</disclaimer>
     <summary lang="hu_HU">Netflix</summary>
     <description lang="hu_HU">Netflix VOD kieg&#xE9;sz&#xED;t&#x151; a Kodihoz</description>
-    <disclaimer lang="hu_HU">El&#x151;fordulhat, hogy a kieg&#xE9;sz&#xED;t&#x151; n&#xE9;h&#xE1;ny r&#xE9;sze nem t&#xF6;rv&#xE9;nyes az &#xD6;n orsz&#xE1;g&#xE1;ban - telep&#xED;t&#xE9;s el&#x151;tt t&#xE1;j&#xE9;koz&#xF3;djon a helyi t&#xF6;rv&#xE9;nyekr&#x151;l.</disclaimer>
+    <disclaimer lang="hu_HU">El&#x151;fordulhat, hogy a kieg&#xE9;sz&#xED;t&#x151; haszn&#xE1;lata nem t&#xF6;rv&#xE9;nyes az &#xD6;n orsz&#xE1;g&#xE1;ban - telep&#xED;t&#xE9;s el&#x151;tt t&#xE1;j&#xE9;koz&#xF3;djon a helyi t&#xF6;rv&#xE9;nyekr&#x151;l</disclaimer>
+    <summary lang="pt_BR">Netflix</summary>
+    <description lang="pt_BR">Add-on para os servi&#xE7;os VOD do Netflix</description>
+    <disclaimer lang="pt_BR">O uso deste addon pode n&#xE3;o ser legal no seu pa&#xED;s de resid&#xEA;ncia - por favor, verifique as suas leis locais antes de instalar.</disclaimer>
     <summary lang="tr_TR">Netflix</summary>
     <description lang="tr_TR">Netflix VOD Hizmetleri Eklentisi</description>
     <disclaimer lang="tr_TR">Bu eklentinin baz&#x131; b&#xF6;l&#xFC;mleri ikamet etti&#x11F;iniz &#xFC;lkede yasal olmayabilir - l&#xFC;tfen y&#xFC;klemeden &#xF6;nce yerel yasalar&#x131;n&#x131;za bak&#x131;n.</disclaimer>
     <summary lang="ro_RO">Netflix</summary>
     <description lang="ro_RO">Add-on pentru servicii video la cerere Netflix</description>
-    <disclaimer lang="ro_RO">Unele por&#x21B;iuni ale acestui add-on ar putea fi ilegale &#xEE;n &#x21B;ara &#xEE;n care locui&#x21B;i - v&#x103; rug&#x103;m s&#x103; verifica&#x21B;i legile locale &#xEE;nainte de instalare.</disclaimer>
+    <disclaimer lang="ro_RO">Utilizarea acestui add-on ar putea fi ilegal&#x103; &#xEE;n &#x21B;ara &#xEE;n care locui&#x21B;i - v&#x103; rug&#x103;m s&#x103; verifica&#x21B;i legile locale &#xEE;nainte de instalare.</disclaimer>
     <summary lang="sv_SE">Netflix</summary>
     <description lang="sv_SE">Netflix VOD Service-till&#xE4;gg</description>
-    <disclaimer lang="sv_SE">Vissa delar av detta till&#xE4;gg kanske inte &#xE4;r lagligt i ditt hemland - kontrollera med dina lokala lagar innan du installerar.</disclaimer>
+    <disclaimer lang="sv_SE">Anv&#xE4;ndandet av detta till&#xE4;gg kanske inte &#xE4;r lagligt i ditt hemland - kontrollera med dina lokala lagar innan du installerar.</disclaimer>
+    <summary lang="zh_CN">Netflix</summary>
+    <description lang="zh_CN">Netflix VOD&#x670D;&#x52A1;&#x9644;&#x52A0;&#x7EC4;&#x4EF6;</description>
+    <disclaimer lang="zh_CN">&#x6B64;&#x9644;&#x52A0;&#x7EC4;&#x4EF6;&#x5728;&#x60A8;&#x7684;&#x5C45;&#x4F4F;&#x56FD;&#x53EF;&#x80FD;&#x4E0D;&#x5408;&#x6CD5;-&#x8BF7;&#x5728;&#x5B89;&#x88C5;&#x524D;&#x4E0E;&#x60A8;&#x5F53;&#x5730;&#x7684;&#x6CD5;&#x5F8B;&#x6838;&#x5BF9;&#x3002;</disclaimer>
+    <summary lang="fr_FR">Netflix</summary>
+    <description lang="fr_FR">Extension Netflix SVoD</description>
+    <disclaimer lang="fr_FR">L'utilisation de cette extension n'est peut-&#xEA;tre pas l&#xE9;gale dans votre pays de r&#xE9;sidence - renseignez-vous avant de l'installer</disclaimer>
+    <summary lang="pl_PL">Netflix</summary>
+    <description lang="pl_PL">Wtyczka dla us&#x142;ug VOD serwisu Netflix</description>
+    <disclaimer lang="pl_PL">Korzystanie z tego dodatku mo&#x17C;e by&#x107; niezgodne z prawem w twoim kraju zamieszkania - przed zainstalowaniem zapoznaj si&#x119; z lokalnymi przepisami.</disclaimer>
     <assets>
       <icon>resources/media/icon.png</icon>
       <fanart>resources/media/fanart.jpg</fanart>
@@ -784,7 +796,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
       <screenshot>resources/media/screenshot-04.jpg</screenshot>
       <screenshot>resources/media/screenshot-05.jpg</screenshot>
     </assets>
-    <language>en cs de es hr hu it ja ko nl pl pt ro sv tr</language>
+    <language>en cs de es fr hr hu it ja ko nl pl pt ro sv tr zh</language>
     <platform>all</platform>
     <license>MIT</license>
     <website>https://www.netflix.com</website>
@@ -792,9 +804,21 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.6.1 (2020-07-08)
--Fixed broken search menu on fresh installations
--Updated el-gr translation
+v1.7.0 (2020-07-28)
+-Big improvement in loading lists when you have many titles to My list
+-Refactor of nfsession
+-Refactor/improved library code:
+  -Improved speed and cpu use in autoupdate/sync in background
+  -Suppressed continuous appearance of loading screen when autoupdate/sync in background
+  -Widgets/Favourites managed without profile selection
+  -New Import existing library feature
+  -Play From Here context menu is fixed
+  -Reintroduced UpNext fast video playback feature
+  -Very long list of improvements/fixes full list on GitHub PR-756, PR-761
+-Managed error to account not reactivacted
+-New Chinese (simple) language translation
+-Updated translations it, sv-se, fr, de, jp, kr, hu, pl, es, pt-br, ru
+-Many other changes
     </news>
   </extension>
 </addon>
