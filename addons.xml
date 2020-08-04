@@ -889,7 +889,7 @@ v1.7.0 (2020-07-28)
 	</news>
   </extension>
 </addon>
-  <addon id="plugin.video.releaseBB" version="1.9.0" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+  <addon id="plugin.video.releaseBB" version="2.0.0" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
     <import addon="script.module.cloudscraper" version="1.2.34"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -915,8 +915,8 @@ v1.7.0 (2020-07-28)
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
     <email>bugatsinho@protonmail.com</email>
-    <news>+ [B][COLOR lime]1.9.0[/B][/COLOR] [COLOR gold](22-04-2020)[/COLOR]
-- add cloudscraper module to bypass cloudflare</news>
+    <news>+ [B][COLOR lime]2.0.0[/B][/COLOR] [COLOR gold](22-04-2020)[/COLOR]
+- add eztv website option</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
@@ -1457,11 +1457,10 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<platform>all</platform>
 	</extension>
 </addon>
-  <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.34" provider-name="venomous">
+  <addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.44" provider-name="venomous">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
+    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
     <import addon="script.module.requests"/>
-
   </requires>
   <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.python.pluginsource" library="lib"/>
