@@ -554,7 +554,7 @@ On twitter, you send me a private message to get the credentials.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" version="1.7.10" name="Fen" provider-name="Tiki">
+  <addon id="plugin.video.fen" version="1.7.11" name="Fen" provider-name="Tiki">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
@@ -563,7 +563,7 @@ On twitter, you send me a private message to get the credentials.
         <import addon="script.module.resolveurl" version="1.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/fen.py">
-        <provides>video audio</provides>
+        <provides>video audio image</provides>
     </extension>
     <extension point="xbmc.service" library="resources/lib/services.py" start="startup"/>
     <extension point="xbmc.python.module" library="resources/lib/"/>
@@ -1754,7 +1754,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.tikimeta" version="1.1.49" name="Tiki Meta Module" provider-name="Tiki">
+  <addon id="script.module.tikimeta" version="1.1.50" name="Tiki Meta Module" provider-name="Tiki">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
