@@ -524,8 +524,8 @@ Thanks to Twilight for helping me with the Beatport categories
         <platform>all</platform>
     </extension>
 </addon>
-  <addon id="plugin.video.fdj.hd" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="2.5" provider-name="frenchdj">
-  <requires>
+  <addon id="plugin.video.fdj.hd" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="2.6" provider-name="frenchdj">
+ <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
@@ -538,19 +538,17 @@ Thanks to Twilight for helping me with the Beatport categories
     <import addon="script.module.simplejson"/>    
     <import addon="script.module.livestreamer" optional="true"/>
     <import addon="script.module.slproxy" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/> 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">[ User / Password edition ]</summary>
-    <description>FDJ.HD is a AIO with Concerts, Djs, Docs and more.
-[COLOR white]Home of Alive.HD, Beats.HD and Documented.HD.
-[B][COLOR lime]USER [COLOR white]and [COLOR lime]PASSWORD[COLOR white]:
-[/B]To get your login you need to go to: https://twitter.com/frenchdj2.[/COLOR]
-On twitter, you send me a private message to get the credentials.
-</description>
+    <summary lang="en">[ Open Edition ]</summary>
+    <description>FDJ.HD is a AIO (All In One) with Concerts, Djs sets, Docs, more ... 
+Home of Alive.HD, Beats.HD and Documented.HD.
+Channels and Playlists organized by categories. Source: Youtube Website. 
+[B][COLOR lime]Advised the latest version of youtube 6.*.*[/B][/COLOR]</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1496,7 +1494,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		<summary lang="en">Covenant</summary>
 	</extension>
 </addon>
-  <addon id="script.module.cryptolib" name="Crypto Libraries" version="1.0.0" provider-name="Twilight0">
+  <addon id="script.module.cryptolib" name="Crypto Libraries" version="1.1.1" provider-name="Twilight0">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -1700,7 +1698,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.slproxy" name="SLProxy" version="0.0.5" provider-name="devilsport">
+  <addon id="script.module.slproxy" name="SLProxy" version="0.0.7" provider-name="devilsport">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
     <import addon="script.module.requests"/>
@@ -1721,12 +1719,12 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     </news>
   </extension>
 </addon>
-  <addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
+  <addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.11.11.1" provider-name="Streamlink Devs, Twilight0">
   <requires>
       <import addon="xbmc.python" version="2.24.0"/>
       <import addon="script.module.requests" version="2.12.4"/>
       <import addon="script.module.futures" version="2.2.0"/>
-      <import addon="script.module.cryptolib" version="1.0.0"/>
+      <import addon="script.module.cryptolib" version="1.1.0"/>
   </requires>
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
@@ -1739,9 +1737,9 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
       <assets>
           <icon>icon.png</icon>
       </assets>
-      <news>+2019.06.23
-- Changed crypto module addon id
-- Updated description</news>
+      <news>+2019.11.11.X
+- Updated to cc32730ea7c9749169df34e2f1a82c1fdb704df4 from upstream
+      &gt; USTVNOW plugin has been removed due to improper crypto library imports (due to backwards compatibility)</news>
   </extension>
 </addon>
   <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.88" provider-name="The Crew">
