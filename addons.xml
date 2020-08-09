@@ -702,7 +702,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
   </extension>
 </addon>
-  <addon id="plugin.video.movixws" name="Movix Live" version="1.5.5" provider-name="Movix">
+  <addon id="plugin.video.movixws" name="Movix Live" version="1.5.6" provider-name="Movix">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
@@ -1201,7 +1201,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</assets>
 	</extension>
 </addon>
-  <addon id="plugin.video.thecrew" version="0.0.88" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+  <addon id="plugin.video.thecrew" version="0.0.89" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew"/>
@@ -1742,7 +1742,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
       &gt; USTVNOW plugin has been removed due to improper crypto library imports (due to backwards compatibility)</news>
   </extension>
 </addon>
-  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.88" provider-name="The Crew">
+  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.89" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
