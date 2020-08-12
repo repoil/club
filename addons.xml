@@ -719,7 +719,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.netflix" name="Netflix" version="1.7.0" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <addon id="plugin.video.netflix" name="Netflix" version="1.7.1" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -732,12 +732,12 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <provides>video</provides>
   </extension>
   <extension point="xbmc.service" library="service.py"/>
-  <extension point="xbmc.python.module" library="modules/mysql-connector-python"/>
+  <extension point="xbmc.python.module" library="packages/mysql-connector-python"/>
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="cs_CZ">Netflix</summary>
     <description lang="cs_CZ">Plugin pro sledov&#xE1;n&#xED; film&#x16F;, seri&#xE1;l&#x16F; online z Netflixu</description>
-    <disclaimer lang="cs_CZ">N&#x11B;kter&#xE9; &#x10D;&#xE1;sti tohoto dopl&#x148;ku nemus&#xED; b&#xFD;t ve va&#x161;&#xED; zemi pobytu leg&#xE1;ln&#xED; - p&#x159;ed instalac&#xED; dbejte na va&#x161;e z&#xE1;kony.</disclaimer>
+    <disclaimer lang="cs_CZ">Pou&#x17E;it&#xED; tohoto dopl&#x148;ku nemus&#xED; b&#xFD;t ve va&#x161;&#xED; zemi pobytu leg&#xE1;ln&#xED; - p&#x159;ed instalac&#xED; dbejte na va&#x161;e z&#xE1;kony.</disclaimer>
     <summary lang="de_DE">Netflix</summary>
     <description lang="de_DE">Addon f&#xFC;r Netflix VOD-Dienste</description>
     <disclaimer lang="de_DE">M&#xF6;glicherweise ist die Verwendung dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation &#xFC;berpr&#xFC;fen.</disclaimer>
@@ -746,7 +746,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <disclaimer lang="en_GB">The use of this add-on may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
     <summary lang="el_GR">&#x39D;&#x3AD;&#x3C4;&#x3C6;&#x3BB;&#x3B9;&#x3BE;</summary>
     <description lang="el_GR">&#x3A0;&#x3C1;&#x3CC;&#x3C3;&#x3B8;&#x3B5;&#x3C4;&#x3BF; &#x3C5;&#x3C0;&#x3B7;&#x3C1;&#x3B5;&#x3C3;&#x3B9;&#x3CE;&#x3BD; &#x3BA;&#x3B1;&#x3C4;&#x3AC; &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3B3;&#x3B3;&#x3B5;&#x3BB;&#x3AF;&#x3B1; &#x3C4;&#x3BF;&#x3C5; &#x39D;&#x3AD;&#x3C4;&#x3C6;&#x3BB;&#x3B9;&#x3BE;</description>
-    <disclaimer lang="el_GR">&#x39F;&#x3C1;&#x3B9;&#x3C3;&#x3BC;&#x3AD;&#x3BD;&#x3B1; &#x3BC;&#x3AD;&#x3C1;&#x3B7; &#x3B1;&#x3C5;&#x3C4;&#x3BF;&#x3CD; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3BC;&#x3B7;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3CC;&#x3BC;&#x3B9;&#x3BC;&#x3B1; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C7;&#x3CE;&#x3C1;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3C4;&#x3BF;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3C4;&#x3B5; - &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3CE; &#x3B5;&#x3BB;&#x3AD;&#x3B3;&#x3BE;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3C4;&#x3BF;&#x3C0;&#x3B9;&#x3BA;&#x3BF;&#x3CD;&#x3C2; &#x3BD;&#x3CC;&#x3BC;&#x3BF;&#x3C5;&#x3C2; &#x3C0;&#x3C1;&#x3B9;&#x3BD; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3B3;&#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3C3;&#x3C4;&#x3B1;&#x3C3;&#x3B7;.</disclaimer>
+    <disclaimer lang="el_GR">&#x397; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3B7; &#x3B1;&#x3C5;&#x3C4;&#x3BF;&#x3CD; &#x3C4;&#x3BF;&#x3C5; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3B8;&#x3AD;&#x3C4;&#x3BF;&#x3C5; &#x3BC;&#x3C0;&#x3BF;&#x3C1;&#x3B5;&#x3AF; &#x3BD;&#x3B1; &#x3BC;&#x3B7;&#x3BD; &#x3B5;&#x3AF;&#x3BD;&#x3B1;&#x3B9; &#x3BD;&#x3CC;&#x3BC;&#x3B9;&#x3BC;&#x3B7; &#x3C3;&#x3C4;&#x3B7;&#x3BD; &#x3C7;&#x3CE;&#x3C1;&#x3B1; &#x3C0;&#x3BF;&#x3C5; &#x3BA;&#x3B1;&#x3C4;&#x3BF;&#x3B9;&#x3BA;&#x3B5;&#x3AF;&#x3C4;&#x3B5; - &#x3C0;&#x3B1;&#x3C1;&#x3B1;&#x3BA;&#x3B1;&#x3BB;&#x3CE; &#x3B5;&#x3BB;&#x3AD;&#x3B3;&#x3BE;&#x3C4;&#x3B5; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3C4;&#x3BF;&#x3C0;&#x3B9;&#x3BA;&#x3BF;&#x3CD;&#x3C2; &#x3BD;&#x3CC;&#x3BC;&#x3BF;&#x3C5;&#x3C2; &#x3C0;&#x3C1;&#x3B9;&#x3BD; &#x3C4;&#x3B7;&#x3BD; &#x3B5;&#x3B3;&#x3BA;&#x3B1;&#x3C4;&#x3AC;&#x3C3;&#x3C4;&#x3B1;&#x3C3;&#x3B7;.</disclaimer>
     <summary lang="nl_NL">Netflix</summary>
     <description lang="nl_NL">Bekijk Netflix films en tvprogramma's in Kodi.</description>
     <disclaimer lang="nl_NL">Sommige delen van deze add-on zijn mogelijk onwettig in jouw land - raadpleeg de lokale wetgeving alvorens deze add-on te installeren.</disclaimer>
@@ -785,7 +785,10 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <summary lang="pl_PL">Netflix</summary>
     <description lang="pl_PL">Wtyczka dla us&#x142;ug VOD serwisu Netflix</description>
     <disclaimer lang="pl_PL">Korzystanie z tego dodatku mo&#x17C;e by&#x107; niezgodne z prawem w twoim kraju zamieszkania - przed zainstalowaniem zapoznaj si&#x119; z lokalnymi przepisami.</disclaimer>
-    <assets>
+    <summary lang="he_IL">Netflix</summary>
+    <description lang="he_IL">&#x5EA;&#x5D5;&#x5E1;&#x5E3; VOD &#x5DC;&#x5E9;&#x5D9;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5DC; Netflix</description>
+    <disclaimer lang="he_IL">&#x5D4;&#x5E9;&#x5D9;&#x5DE;&#x5D5;&#x5E9; &#x5D1;&#x5EA;&#x5D5;&#x5E1;&#x5E3; &#x5D6;&#x5D4; &#x5E2;&#x5DC;&#x5D5;&#x5DC; &#x5DC;&#x5D4;&#x5D9;&#x5D5;&#x5EA; &#x5DC;&#x5D0; &#x5D7;&#x5D5;&#x5E7;&#x5D9; &#x5D1;&#x5DE;&#x5D3;&#x5D9;&#x5E0;&#x5EA; &#x5DE;&#x5D2;&#x5D5;&#x5E8;&#x5D9;&#x5DA; - &#x5D0;&#x5E0;&#x5D0; &#x5D1;&#x5D3;&#x5D5;&#x5E7; &#x5D0;&#x5EA; &#x5D4;&#x5D7;&#x5D5;&#x5E7; &#x5D1;&#x5E8;&#x5E9;&#x5D5;&#x5EA; &#x5D4;&#x5DE;&#x5E7;&#x5D5;&#x5DE;&#x5D9;&#x5EA; &#x5DC;&#x5E4;&#x5E0;&#x5D9; &#x5D4;&#x5D4;&#x5EA;&#x5E7;&#x5E0;&#x5D4;</disclaimer>
+	<assets>
       <icon>resources/media/icon.png</icon>
       <fanart>resources/media/fanart.jpg</fanart>
       <screenshot>resources/media/screenshot-01.jpg</screenshot>
@@ -794,7 +797,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
       <screenshot>resources/media/screenshot-04.jpg</screenshot>
       <screenshot>resources/media/screenshot-05.jpg</screenshot>
     </assets>
-    <language>en cs de es fr hr hu it ja ko nl pl pt ro sv tr zh</language>
+    <language>en cs de es fr he hr hu it ja ko nl pl pt ro sv tr zh</language>
     <platform>all</platform>
     <license>MIT</license>
     <website>https://www.netflix.com</website>
@@ -802,21 +805,22 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.7.0 (2020-07-28)
--Big improvement in loading lists when you have many titles to My list
--Refactor of nfsession
--Refactor/improved library code:
-  -Improved speed and cpu use in autoupdate/sync in background
-  -Suppressed continuous appearance of loading screen when autoupdate/sync in background
-  -Widgets/Favourites managed without profile selection
-  -New Import existing library feature
-  -Play From Here context menu is fixed
-  -Reintroduced UpNext fast video playback feature
-  -Very long list of improvements/fixes full list on GitHub PR-756, PR-761
--Managed error to account not reactivacted
--New Chinese (simple) language translation
--Updated translations it, sv-se, fr, de, jp, kr, hu, pl, es, pt-br, ru
--Many other changes
+v1.7.1 (2020-08-12)
+-Added Profiles menu with new profiles context menus:
+   * Set for auto-selection
+   * Set for library playback
+   These two options now are managed only from the Profiles list
+-Added setting to enable nf watched status sync with library (one way)
+-Added expert setting to customize results per page
+-Fixed add-on inaccessibility when the current used profile no more exists
+-Fixed feature "Select first unwatched" on Kodi 18.x
+-Fixed failure to update nf watched status (seem works better now)
+-Little speed improvement on add-on sequential executions
+-Better handled types of exceptions with IPC
+-Removed disable_modal_error_display expert setting
+-Some code cleaning with other improvements
+-Add Hebrew translation
+-Updated translations it, el, fr, pr_br, jp, kr, hu, po, de, ro, cz, zh_cn
     </news>
   </extension>
 </addon>
