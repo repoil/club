@@ -552,7 +552,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" version="1.7.12" name="Fen" provider-name="Tiki">
+  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.01">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
@@ -560,12 +560,13 @@ Channels and Playlists organized by categories. Source: Youtube Website.
         <import addon="script.module.openscrapers"/>
         <import addon="script.module.resolveurl" version="1.0.0"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/fen.py">
+    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
         <provides>video audio image</provides>
     </extension>
-    <extension point="xbmc.service" library="resources/lib/services.py" start="startup"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension library="resources/lib/services.py" point="xbmc.service" start="startup"/>
+    <extension library="resources/lib/" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary>
             Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only.
         </summary>
@@ -1759,14 +1760,15 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.tikimeta" version="1.1.50" name="Tiki Meta Module" provider-name="Tiki">
+  <addon id="script.module.tikimeta" version="1.2.01" name="Tiki Meta Module" provider-name="Tiki">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+    <extension library="lib/default.py" point="xbmc.python.pluginsource">
         <provides>executable</provides>
     </extension>
+    <extension library="lib/services.py" point="xbmc.service" start="startup"/>
+    <extension library="lib" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
         <summary>Metadata for Addons</summary>
         <description>Metadata for Addons</description>

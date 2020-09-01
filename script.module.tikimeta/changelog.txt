@@ -1,3 +1,7 @@
+[COLOR dodgerblue][B]Version 1.2.01[/B][/COLOR]
+- Switch to cache based handling of settings.
+- Other fixes.
+
 [COLOR dodgerblue][B]Version 1.1.50[/B][/COLOR]
 - Database fixes. Database version bumped to metacache6. Previously cached meta will need to be re-cached.
 
