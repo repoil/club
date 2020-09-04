@@ -1,3 +1,6 @@
+[B][COLOR red]Update - v1.0.7 - Sept 04, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fix typo in version bump and updated changelog[/I]
+
 [B][COLOR red]Update - v1.0.6 - Sept 03, 2020[/COLOR][/B]
 [COLOR yellow]--[/COLOR][I] Changes for Venom compliant code requirements[/I]
 
