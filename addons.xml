@@ -555,13 +555,13 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.07">
+  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.10">
     <requires>
-        <import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
         <import addon="script.module.tikimeta" version="1.0.0"/>
-        <import addon="script.module.openscrapers"/>
-        <import addon="script.module.resolveurl" version="1.0.0"/>
+        <import addon="script.module.myaccounts" version="0.0.0"/>
+        <import addon="script.module.fenomscrapers"/>
     </requires>
     <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
         <provides>video audio image</provides>
@@ -575,7 +575,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
         </summary>
         <description>
 Specializes in Furk and Easynews(web) account access.
-Also utilizes Openscrapers for those without a Furk or Easynews(web) account.
+Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account.
 This add-on is intended for advanced Kodi users only.
 Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
         </description>
@@ -1769,8 +1769,9 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
         </assets>
     </extension>
 </addon>
-  <addon id="script.module.tikimeta" version="1.2.07" name="Tiki Meta Module" provider-name="Tiki">
+  <addon id="script.module.tikimeta" version="1.2.08" name="Tiki Meta Module" provider-name="Tiki">
     <requires>
+        <import addon="script.module.requests" version="2.19.1"/>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
     <extension library="lib/default.py" point="xbmc.python.pluginsource">
@@ -1779,6 +1780,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
     <extension library="lib/services.py" point="xbmc.service" start="startup"/>
     <extension library="lib" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary>Metadata for Addons</summary>
         <description>Metadata for Addons</description>
         <platform>all</platform>
