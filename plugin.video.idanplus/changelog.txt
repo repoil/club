@@ -1,3 +1,6 @@
+v2.7.3  -  29/09/2020
+- Fix for Keshet VOD episodes list.
+
 v2.7.2  -  21/09/2020
 - Fix for Keshet Live and VOD. (http => https).
 
