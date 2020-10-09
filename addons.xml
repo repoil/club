@@ -98,9 +98,10 @@ Added Trakt Manager
 		</news>
 	</extension>
 </addon>
-  <addon id="context.venom" version="1.0.8" name="Venom - Global Context Menu Items" provider-name="Venom">
+  <addon id="context.venom" version="1.0.9" name="Venom - Global Context Menu Items" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
 	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
@@ -230,9 +231,10 @@ Added Trakt Manager
 			<fanart>fanart.png</fanart>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.0.8 - Sept 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fix issue with accent characters causing stop errors.[/I]
-[COLOR yellow]--[/COLOR][I] added service logging notice for kodi.log.[/I]
+[B][COLOR red]Update - v1.0.9 - Oct. 05, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed Trakt Manager not opening.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Context Settings not opening.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed service update check.[/I]
 		</news>
 	</extension>
 </addon>
@@ -1284,7 +1286,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 	</assets>
   </extension>
 </addon>
-  <addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.4">
+  <addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.5">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="context.venom" version="1.0.0"/>
@@ -1319,11 +1321,15 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.2.4 &#x2013; Oct. 03, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Removed old exo code for configurable "New Movies"
-    and "New Episodes".  All items were currently availalbe.[/I]
-[COLOR yellow]--[/COLOR][I] Renamed a few menu items.[/I]
-[COLOR yellow]--[/COLOR][I] Code changes for "My Accounts" changes.[/I]
+[B][COLOR red]Update - v4.2.5 &#x2013; Oct. 09, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Removed cache check setting for AD, PM, and RD,
+    this is now hard coded on to always check cached status.
+    You can still enable/disable showing of uncached torrents.[/I]
+[COLOR yellow]--[/COLOR][I] Removed setting to enable/disable pack scraping.
+    This is now hard coded on.[/I]
+[COLOR yellow]--[/COLOR][I] Fix for random container refresah issues
+    during playback.[/I]
+[COLOR yellow]--[/COLOR][I] Fix for Furk resolve issue.[/I]
 		</news>
 	</extension>
 </addon>
