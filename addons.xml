@@ -618,7 +618,7 @@ INFO: For latest changes see Changelog within Tools of add-on.
         </supportedcontent>	
     </extension>
 </addon>
-  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.7.6" provider-name="nil">
+  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.7.7" provider-name="nil">
 		<requires>
 			<import addon="script.module.requests"/>
 			<import addon="script.module.xmltodict"/>
@@ -631,7 +631,7 @@ INFO: For latest changes see Changelog within Tools of add-on.
 			<platform>all</platform>
 			<summary lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.</summary>
 			<description lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.[CR]&#x5D0;&#x5E4;&#x5E9;&#x5E8;&#x5D5;&#x5D9;&#x5D5;&#x5EA; &#x5E9;&#x5D5;&#x5E0;&#x5D5;&#x5EA; &#x5D1;&#x5D4;&#x5D2;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D5;&#x5D1;&#x5E7;&#x5DC;&#x5D9;&#x5E7; &#x5D9;&#x5DE;&#x5E0;&#x5D9; &#x5E2;&#x5DC; &#x5E4;&#x5E8;&#x5D9;&#x5D8; &#x5D1;&#x5E8;&#x5E9;&#x5D9;&#x5DE;&#x5D4;.</description>
-			<news>- Fix for Reshet VOD. (Changes in website).</news>
+			<news>- Fix for Kan 23 VOD.</news>
 			<supportedcontent>
 				<content>tvshows</content>
 			</supportedcontent>
@@ -1202,7 +1202,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</assets>
 	</extension>
 </addon>
-  <addon id="plugin.video.thecrew" version="0.0.94" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+  <addon id="plugin.video.thecrew" version="0.0.95" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew"/>
@@ -1738,7 +1738,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
       &gt; USTVNOW plugin has been removed due to improper crypto library imports (due to backwards compatibility)</news>
   </extension>
 </addon>
-  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.94" provider-name="The Crew">
+  <addon id="script.module.thecrew" name="[COLOR orchid]THE CREW MODULE[/COLOR]" version="0.0.95" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.beautifulsoup4"/>
