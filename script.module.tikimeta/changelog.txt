@@ -1,3 +1,6 @@
+[COLOR dodgerblue][B]Version 1.2.09[/B][/COLOR]
+- Fix for TMDb artwork not loading on some platforms.
+
 [COLOR dodgerblue][B]Version 1.2.01[/B][/COLOR]
 - Switch to cache based handling of settings.
 - Other fixes.
