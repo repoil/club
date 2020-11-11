@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.17">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.18">
     <requires>
         <import addon="script.module.requests" version="2.19.1"/>
         <import addon="script.tiki.artwork" version="1.0.0"/>
@@ -8,9 +8,9 @@
         <import addon="script.module.fenomscrapers"/>
     </requires>
     <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
-        <provides>video audio image</provides>
+        <provides>video</provides>
     </extension>
-    <extension library="resources/lib/services.py" point="xbmc.service" start="startup"/>
+    <extension library="resources/lib/service.py" point="xbmc.service" start="startup"/>
     <extension library="resources/lib/" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>true</reuselanguageinvoker>
