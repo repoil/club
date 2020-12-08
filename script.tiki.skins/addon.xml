@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.tiki.artwork" version="1.1.12" name="Tiki Artwork" provider-name="Tiki">
+<addon id="script.tiki.skins" version="1.0.0" name="Tiki Skins" provider-name="Tiki">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
     </requires>
     <extension point="xbmc.addon.metadata">
-        <summary>Themes for Addons</summary>
-        <description>Themes for Addons</description>
+        <summary>Skins for Addons</summary>
+        <description>Skins for Addons</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <assets>
