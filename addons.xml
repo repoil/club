@@ -949,7 +949,7 @@ v1.12.0 (2020-12-13)
         </supportedcontent>
     </extension>
 </addon>
-  <addon id="plugin.video.seren" version="2.0.1" name="Seren" provider-name="Nixgates">
+  <addon id="plugin.video.seren" version="2.0.6" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.future" version="0.17.1"/>
@@ -1013,6 +1013,23 @@ v1.12.0 (2020-12-13)
             <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
         </assets>
         <news>
+            Changelog 2.0.6:
+            Create Skins directory if missing
+            Allow failure in pre-term until investigated
+
+            Changelog 2.0.5:
+            Allow more failures that will require to be investigated further in the future
+
+            Changelog 2.0.4:
+            Safe get release title when cloud scraping
+            Allow and log failures in maintenance process
+
+            Changelog 2.0.3:
+            Added default value of None for skin color when attempting to pull color from user's skin
+
+            Changelog 2.0.2:
+            Force table re-fresh is sync database fails to rebuild when updating
+
             Changelog 2.0.1:
             Fix last_meta_update value to reflect new Seren version
 
