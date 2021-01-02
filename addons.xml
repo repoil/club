@@ -900,7 +900,7 @@ v1.12.0 (2020-12-13)
 	</news>
   </extension>
 </addon>
-  <addon id="plugin.video.releaseBB" version="2.0.1.1" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+  <addon id="plugin.video.releaseBB" version="2.0.2" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
     <import addon="script.module.cloudscraper" version="1.2.34"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -926,8 +926,8 @@ v1.12.0 (2020-12-13)
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
     <email>bugatsinho@protonmail.com</email>
-    <news>+ [B][COLOR lime]2.0.1[/B][/COLOR] [COLOR gold](20-11-2020)[/COLOR]
-- add rlsbb website option</news>
+    <news>+ [B][COLOR lime]2.0.2[/B][/COLOR] [COLOR gold](01-01-2021)[/COLOR]
+- corrections in the code</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
