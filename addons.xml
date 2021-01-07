@@ -854,7 +854,7 @@ v1.12.1 (2021-01-02)
 	</news>
   </extension>
 </addon>
-  <addon id="plugin.video.releaseBB" version="2.0.2" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
+  <addon id="plugin.video.releaseBB" version="2.0.3.1" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Bugatsinho">
   <requires>
     <import addon="script.module.cloudscraper" version="1.2.34"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -880,8 +880,8 @@ v1.12.1 (2021-01-02)
     <twitter>https://twitter.com/bugatsinho</twitter>
     <repo>https://bugatsinho.github.io/repo/</repo>
     <email>bugatsinho@protonmail.com</email>
-    <news>+ [B][COLOR lime]2.0.2[/B][/COLOR] [COLOR gold](01-01-2021)[/COLOR]
-- corrections in the code</news>
+    <news>+ [B][COLOR lime]2.0.3.1[/B][/COLOR] [COLOR gold](06-01-2021)[/COLOR]
+- corrections in service.py</news>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
