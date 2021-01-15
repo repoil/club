@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.25a">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.25b">
     <requires>
         <import addon="script.module.requests" version="2.19.1"/>
         <import addon="script.module.tikiskins" version="1.0.0"/>
@@ -13,7 +13,7 @@
     <extension library="resources/lib/service.py" point="xbmc.service" start="startup"/>
     <extension library="resources/lib/" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary>
             Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only. You must have a debrid service to use this add-on without Furk/Easynews.
         </summary>
