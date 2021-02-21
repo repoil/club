@@ -580,7 +580,7 @@ INFO: For latest changes see Changelog within Tools of add-on.
         </supportedcontent>	
     </extension>
 </addon>
-  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.8.9" provider-name="Fishenzon">
+  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.9.0" provider-name="Fishenzon">
 		<requires>
 			<import addon="script.module.requests"/>
 			<import addon="script.module.xmltodict"/>
@@ -597,7 +597,7 @@ INFO: For latest changes see Changelog within Tools of add-on.
 			<platform>all</platform>
 			<summary lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.</summary>
 			<description lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.[CR]&#x5D0;&#x5E4;&#x5E9;&#x5E8;&#x5D5;&#x5D9;&#x5D5;&#x5EA; &#x5E9;&#x5D5;&#x5E0;&#x5D5;&#x5EA; &#x5D1;&#x5D4;&#x5D2;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D5;&#x5D1;&#x5E7;&#x5DC;&#x5D9;&#x5E7; &#x5D9;&#x5DE;&#x5E0;&#x5D9; &#x5E2;&#x5DC; &#x5E4;&#x5E8;&#x5D9;&#x5D8; &#x5D1;&#x5E8;&#x5E9;&#x5D9;&#x5DE;&#x5D4;.</description>
-			<news>- Bugfix.</news>
+			<news>- Fix for Sport 1 VOD. (Changes in website).</news>
 			<supportedcontent>
 				<content>tvshows</content>
 			</supportedcontent>
@@ -692,7 +692,7 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.netflix" name="Netflix" version="1.12.2" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
+  <addon id="plugin.video.netflix" name="Netflix" version="1.12.3" provider-name="libdev + jojo + asciidisco + caphm + castagnait">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.addon.signals" version="0.0.3"/>
@@ -778,10 +778,9 @@ It is a audio addon, just had to change to video to acomodate him to be a part o
     <forum>https://forum.kodi.tv/showthread.php?tid=329767</forum>
     <source>https://github.com/CastagnaIT/plugin.video.netflix</source>
     <news>
-v1.12.2 (2021-01-25)
-- Fixed possible service crash on slower devices like RPI
-- Better managed data chunks in some cases could cause errors on starting playback
-- Tried to better handle HTTP ReadTimeout/ConnectionError errors
+v1.12.3 (2021-02-21)
+- Fixed HTTP ReadTimeout/ConnectionError errors
+- Fixed incorrect handling of MSL errors
     </news>
   </extension>
 </addon>
