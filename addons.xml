@@ -517,7 +517,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.38">
+  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.39">
     <requires>
         <import addon="script.module.requests" version="2.19.1"/>
         <import addon="script.tikiskins" version="1.0.0"/>
@@ -1303,14 +1303,17 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 		</news>
 	</extension>
 </addon>
-  <addon id="plugin.video.wallaNew.video" name="&#x5D5;&#x5D5;&#x5D0;&#x5DC;&#x5D4;" version="2.3.2" provider-name="sbentin, shlomico, nil">
+  <addon id="plugin.video.wallaNew.video" name="&#x5D5;&#x5D5;&#x5D0;&#x5DC;&#x5D4;" version="2.3.3" provider-name="sbentin, shlomico, nil">
 		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
+			<import addon="script.module.future" version="0.0.1"/>
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="walla.py">
 			<provides>video</provides>
 		</extension>
 		<extension point="xbmc.addon.metadata">
+			<assets>
+				<icon>icon.png</icon>
+			</assets>
 			<platform>all</platform>
 			<minversion>31632</minversion>
 			<summary lang="en">Watch Walla video contents.</summary>
