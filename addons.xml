@@ -65,7 +65,7 @@ Rework for Seren 2.0
 		</news>
 	</extension>
 </addon>
-  <addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.3">
+  <addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.6">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1"/>
 	</requires>
@@ -194,9 +194,10 @@ Rework for Seren 2.0
 			<screenshot/>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.3 - April 18, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Update for compatibility with plugin.video.venom TVShow meta provider
-    change from TVDb to TMDb.[/I]
+[B][COLOR red]Update - v1.1.6 - May 26, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Update "Browse Series" to reflect "tvshow.clearart" and "tvshow.clearlogo"
+    changes in Venom  This is only seen when Venom is set to "Direct Progress Scraping"
+    and "Browse Serires" is chosen.[/I]
 		</news>
 	</extension>
 </addon>
@@ -570,7 +571,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
         </supportedcontent>	
     </extension>
 </addon>
-  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.9.6" provider-name="Fishenzon">
+  <addon id="plugin.video.idanplus" name="&#x5E2;&#x5D9;&#x5D3;&#x5DF;+ &#x5E4;&#x5DC;&#x5D5;&#x5E1;" version="2.9.7.1" provider-name="Fishenzon">
 		<requires>
 			<import addon="script.module.requests"/>
 			<import addon="script.module.xmltodict"/>
@@ -587,7 +588,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 			<platform>all</platform>
 			<summary lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.</summary>
 			<description lang="en">&#x5E6;&#x5E4;&#x5D9;&#x5D4; &#x5D1;&#x5E2;&#x5E8;&#x5D5;&#x5E6;&#x5D9; &#x5E2;&#x5D9;&#x5D3;&#x5DF; &#x5E4;&#x5DC;&#x5D5;&#x5E1; &#x5D5;&#x5D1;&#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5D4;&#x5D0;&#x5EA;&#x5E8;&#x5D9;&#x5DD; &#x5D4;&#x5E8;&#x5E9;&#x5DE;&#x5D9;&#x5D9;&#x5DD;.[CR]&#x5D0;&#x5E4;&#x5E9;&#x5E8;&#x5D5;&#x5D9;&#x5D5;&#x5EA; &#x5E9;&#x5D5;&#x5E0;&#x5D5;&#x5EA; &#x5D1;&#x5D4;&#x5D2;&#x5D3;&#x5E8;&#x5D5;&#x5EA; &#x5D4;&#x5D4;&#x5E8;&#x5D7;&#x5D1;&#x5D4; &#x5D5;&#x5D1;&#x5E7;&#x5DC;&#x5D9;&#x5E7; &#x5D9;&#x5DE;&#x5E0;&#x5D9; &#x5E2;&#x5DC; &#x5E4;&#x5E8;&#x5D9;&#x5D8; &#x5D1;&#x5E8;&#x5E9;&#x5D9;&#x5DE;&#x5D4;.</description>
-			<news>- Fix for 21 Live channel. (Changes in website)[CR]- Fix for 20-Channel VOD. (Changes in website).[CR]- Added Kan 23 live channel backup link.[CR]- Added Kan 23 live channel from dailymotion (1080p) - need to install and configure dailymotion addon.</news>
+			<news>- Fix for ver 2.9.7 on Kodi 19.</news>
 			<supportedcontent>
 				<content>tvshows</content>
 			</supportedcontent>
@@ -1265,7 +1266,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 	</assets>
   </extension>
 </addon>
-  <addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.0.6">
+  <addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.0.7">
 	<requires>
 		<import addon="context.venom"/>
 		<import addon="script.module.myaccounts"/>
@@ -1299,13 +1300,12 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v5.0.6 - May 19, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Cam and SD filtering now has their own separate setting. SD
-    quality will only be removed when setting is in use if better
-    quality does in fact exist.[/I]
-[COLOR yellow]--[/COLOR][I] Source playback will now strictly use "setResolvedURL" for playback
-    method due to changes in Matrix 19.1[/I]
-[COLOR yellow]--[/COLOR][I] Venom now uses a router method call from plugin default for speed.[/I]
+[B][COLOR red]Update - v5.0.7 - May 26, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed multiple issues with Matrix skins requiring "tvshow.clearart" and "tvshow.clearlogo" at
+    season and episode level vs. simply "clearart" and "clearlogo".[/I]
+[COLOR yellow]--[/COLOR][I] All "Help", "Changelog", and "NewsInfo" files have been converted to window xml's to pave the
+    way for complete transition to windows xml's throughout. Slow migration over to new setup.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed 24hr Delay setting not working for Library integration.[/I]
 		</news>
 	</extension>
 </addon>
