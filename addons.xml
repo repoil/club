@@ -65,7 +65,7 @@ Rework for Seren 2.0
 		</news>
 	</extension>
 </addon>
-  <addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.6">
+  <addon id="context.venom" name="Venom - Global Context Menu Items" provider-name="Venom" version="1.1.7">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1"/>
 	</requires>
@@ -91,10 +91,12 @@ Rework for Seren 2.0
 			<item library="clearProviders.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Clear Providers</label>
 				<visible>
-					!String.IsEmpty(Window(home).Property(context.venom.clearProviders)) +
+					[!String.IsEmpty(Window(home).Property(context.venom.clearProviders)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
-					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]] |
+					[String.Contains(Container.FolderPath,videodb://) + String.Contains(Container.ListItem.Path,plugin.video.venom) +
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]]
 				</visible>
 			</item>
 			<item library="clearBookmark.py">
@@ -110,14 +112,10 @@ Rework for Seren 2.0
 			<item library="rescrape.py">
 				<label>[B][COLOR red]Venom[/COLOR][/B] - Rescrape Item</label>
 				<visible>
-					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) +
+					[!String.IsEmpty(Window(home).Property(context.venom.rescrape)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play) +
 					String.IsEqual(ListItem.Property(isVenom_widget),true) +
-					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]
-<!-- Future for Library CM to Rescrape -->
-<!-- 					!String.IsEmpty(Window(home).Property(context.venom.rescrape)) + -->
-<!-- 					[String.Contains(ListItem.Path,plugin.video.venom) + String.IsEqual(ListItem.FileExtension,strm) | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.venom/?action=play)] + -->
-<!-- 					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)] -->
+					[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]]
 				</visible>
 			</item>
 			<item library="playFromHere.py">
@@ -194,10 +192,9 @@ Rework for Seren 2.0
 			<screenshot/>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.1.6 - May 26, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Update "Browse Series" to reflect "tvshow.clearart" and "tvshow.clearlogo"
-    changes in Venom  This is only seen when Venom is set to "Direct Progress Scraping"
-    and "Browse Serires" is chosen.[/I]
+[B][COLOR red]Update - v1.1.7 - June 03, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] "Clear Providers" is now availble for Library Items via context menu for
+    items added from the Venom addon.[/I]
 		</news>
 	</extension>
 </addon>
@@ -1266,7 +1263,7 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 	</assets>
   </extension>
 </addon>
-  <addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.1.3">
+  <addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.1.4">
 	<requires>
 		<import addon="context.venom"/>
 		<import addon="script.module.myaccounts"/>
@@ -1300,10 +1297,16 @@ This plugin is a fork from the spotify part of realvito spotitube addon.</descri
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v5.1.3 - June 06, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Direct links not playing.[/I]
-[COLOR yellow]--[/COLOR][I] Some complaints that the new window xml is a little to brite and hard on the eyes. I added
-    new Source Select Highlight color option to settings.  See Source Options.[/I]
+[B][COLOR red]Update - v5.1.4 - June 07, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Skin changes: The new "View Uncached Torrents" button made clearlogo look off center, this is
+    now fix.[/I]
+[COLOR yellow]--[/COLOR][I] Skin changes: The secondary line is now Bold when in focus.[/I]
+[COLOR yellow]--[/COLOR][I] Skin changes: The Info icons have be recentered and the space between has been incrreased
+    for better visibility.[/I]
+[COLOR yellow]--[/COLOR][I] Playback from "Browse Debrid Pack" is now fixed.[/I]
+[COLOR yellow]--[/COLOR][I] There was a rare case where the Progress dialog during Resolving was empty and caused an
+    infinite loop.  This is now fixed.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed settings page missing "Alldebrid" due to typo in ID.[/I]
 		</news>
 	</extension>
 </addon>
