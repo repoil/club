@@ -1,15 +1,12 @@
-Version 5.1.22 (January 18, 2021)
+Version 5.1.33 (June 05, 2021)
 - Code Base Changes:
-    - None
+    - Drop to TLS1.1 on Android
 
 - Resolvers Added:
-    - jetload
+    - None
  
 - Resolvers Fixed/Updated:
-    - videossh
-    - voe.sx
-    - evoload
-    - doodstream
+    - clicknupload
 
 - Resolvers Removed
     - None
