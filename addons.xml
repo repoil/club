@@ -526,7 +526,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     <platform>all</platform>
   </extension>
 </addon>
-  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.06">
+  <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.07">
     <requires>
         <import addon="script.module.requests" version="2.19.1"/>
         <import addon="script.tikiskins" version="1.0.0"/>
@@ -540,7 +540,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     <extension library="resources/lib/service.py" point="xbmc.service" start="startup"/>
     <extension library="resources/lib/" point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en">Mainly used for Furk and Easynews.</summary>
         <description lang="en">This add-on is intended for advanced Kodi users only. Mainly used for Furk and Easynews(web) account access. Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account. You must have a debrid service to use this add-on without Furk/Easynews.[CR][CR][B]Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.[/B]</description>
         <platform>all</platform>
@@ -1953,7 +1953,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         </assets>
     </extension>
 </addon>
-  <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.14">
+  <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.15">
     <extension point="xbmc.python.module"/>
     <extension point="xbmc.addon.metadata">
         <summary>Skins for Addons</summary>
