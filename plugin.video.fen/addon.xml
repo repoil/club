@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.09">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.10">
     <requires>
         <import addon="script.module.requests" version="2.19.1"/>
         <import addon="script.tikiskins" version="1.0.0"/>
